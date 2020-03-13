@@ -35,6 +35,7 @@
     </nav>
 
     <nav class="nav mobile" id="nav-mobile">
+     <div class="mobile-inner">
      <div class="mobile-wrapper">
       <img src="images/mobile-img/Union.svg" alt=""> 
       <a href="#nowhere" title="Lorum ipsum dolor sit amet" class="nav_link"> Home</a>
@@ -49,9 +50,10 @@
      </div>
      <div class="mobile-wrapper">
      <img src="images/mobile-img/gold.svg" alt=""> 
-     <a href="#modal-contact" rel="modal:open" class="nav_link">Contact Us</a> 
+     <a href="#modal-contact" id="modal-open1" rel="modal:open" class="nav_link">Contact Us</a> 
      </div>
      <div id="close-mobile"><img src="images/mobile-img/Group 340.svg" alt=""></div>
+     </div>
     </nav>
 
 				<button class="nav-toggle" id="nav_toggle" type="button">
@@ -77,11 +79,14 @@
     <label for="desc">Description</label>
     <textarea name="" id="desc" cols="30" rows="7" placeholder="Let us know your thoughts about the app, ask for assistance or make suggestions here. 
 Thank you for sharing!"></textarea>
-<div id="charactersRemaining">characters left</div>
-    
+     <div style="position: relative; width: 100%;">
+      <div id="charactersRemaining">450</div>
+      <span class="characters-left">characters left</span>
+     </div>
    </form>
    <a href="#" class="submit-modal" >Submit</a>
   </div>
+
 </div>
   <section class="download_desctop_app">
    <div class="container">
@@ -98,6 +103,7 @@ Thank you for sharing!"></textarea>
        Compliant with Riot's ToS
       </a>
       <img src="images/homepage-thumbnail2 1.png" class="image-screenshot" alt="">
+      <img src="images/mobile-img/main_video.png" class="image-screenshot" alt="">
      </div>
     </div>
    </div>

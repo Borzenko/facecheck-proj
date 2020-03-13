@@ -18,7 +18,11 @@ $("#close-mobile").on("click", function(event) {
  event.preventDefault();
  $("#nav-mobile").toggleClass("active");
 });
- 
+
+$("#modal-open1").on("click", function(event) {
+ event.preventDefault();
+ $("#nav-mobile").toggleClass("active");
+});
 
 var el;
 
