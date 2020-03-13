@@ -7,7 +7,13 @@
 section {
   padding: 0px 20px; }
 
-h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0; }
 
 body {
@@ -31,7 +37,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 0 40px;
+  padding: 0 50px 0 40px;
   z-index: 1;
   background: #202529; }
   @media screen and (max-width: 795px) {
@@ -40,13 +46,14 @@ body {
 
 .header-half-block {
   display: block;
+  margin-bottom: 13px;
   max-width: 100%;
   width: calc(100% + 30px);
   margin: 0 auto;
   height: 24px;
   background-color: #202529;
   position: absolute;
-  bottom: -16px;
+  bottom: -8px;
   border-radius: 0 0 45px 45px;
   border-bottom: 1px solid #C59A43;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
@@ -83,21 +90,24 @@ body {
     z-index: 1; }
 
 .header {
-  padding-top: 12px;
+  padding-top: 6px;
   position: absolute;
   width: 100%;
   top: 0;
-  height: 51px;
   left: 0;
   right: 0;
   z-index: 1000;
   background-color: #202529;
   border-bottom: 1px solid #C59A43;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6); }
+  .header .container {
+    position: relative;
+    top: 8px; }
 
 .logo_image {
-  width: 33.18px;
-  height: 31.33px; }
+  width: 39.18px;
+  height: 37.33px;
+  margin-right: 6px; }
 
 .mobile-wrapper {
   display: flex;
@@ -126,7 +136,7 @@ body {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin-right: 37px;
+    margin-right: 34px;
     color: #DEAD4B;
     font-style: normal;
     font-weight: normal;
@@ -267,14 +277,15 @@ body {
   .download_desctop_app .drop-down-arrow {
     background-image: url("../images/Arrow.svg");
     background-size: 59px 17px;
-    width: 60px;
-    height: 25px;
+    width: 54px;
+    height: 30px;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 0px;
+    bottom: 11px;
     right: 50%;
     z-index: 3;
-    left: 48%;
+    left: calc(50% - 27px);
+    background-size: 100%;
     cursor: pointer; }
     @media screen and (max-width: 795px) {
       .download_desctop_app .drop-down-arrow {
@@ -301,7 +312,8 @@ body {
     font-size: 18px;
     line-height: 145%;
     text-align: center;
-    color: #F2F2F2; }
+    color: #F2F2F2;
+    margin-bottom: 19px; }
   .intro img:last-child {
     display: none; }
     @media screen and (max-width: 765px) {
@@ -367,12 +379,12 @@ body {
     right: -57%; }
 
 .main_features {
+  margin-bottom: 16px;
   background: #17181C;
-  box-shadow: 0 5 0px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 2;
   padding-bottom: 86px;
-  box-shadow: 1px 1px 46px 45px #17181C; }
+  box-shadow: 1px 33px 46px 45px #17181C; }
 
 .info-features {
   display: flex;
@@ -388,7 +400,8 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #F2F2F2;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 14px; }
 
 .info-title-m2 {
   font-family: 'Marcellus';
@@ -408,7 +421,7 @@ body {
   justify-content: space-between; }
 
 .info-screen {
-  width: 48%;
+  width: 49%;
   position: relative;
   z-index: 1; }
 
@@ -432,6 +445,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 132.33%;
+  margin-bottom: 18px;
   text-transform: uppercase;
   color: #0BB1C3; }
 
@@ -453,7 +467,7 @@ body {
   position: relative;
   margin-left: 33px;
   margin-top: -6px;
-  width: 36%; }
+  width: 36.2%; }
   .info-text:after {
     content: "";
     background-image: url("../images/tag.svg");
@@ -461,7 +475,7 @@ body {
     height: 20px;
     background-repeat: no-repeat;
     position: absolute;
-    top: 28px;
+    top: 38px;
     left: -215px;
     z-index: 1; }
     @media screen and (max-width: 1050px) {
@@ -477,7 +491,7 @@ body {
     height: 20px;
     background-repeat: no-repeat;
     position: absolute;
-    top: 36px;
+    top: 48px;
     left: -225px;
     z-index: 1; }
   .info-text p {
@@ -493,8 +507,8 @@ body {
   position: relative;
   background-image: url("../images/swamp.png");
   background-repeat: no-repeat;
-  height: 652px;
-  padding-top: 14px; }
+  padding-top: 14px;
+  padding-bottom: 124px; }
   @media screen and (max-width: 1420px) {
     .ingame-tags {
       overflow: hidden; } }
@@ -864,7 +878,8 @@ body {
     line-height: 21px;
     color: #917444;
     margin-bottom: 5px; }
-  .modal-form input, .modal-form textarea {
+  .modal-form input,
+  .modal-form textarea {
     width: 100%;
     background: #0D0D0F;
     border: 1px solid #043E4C;
