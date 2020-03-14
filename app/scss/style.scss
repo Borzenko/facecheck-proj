@@ -489,7 +489,7 @@ body {
   padding-top: 0;
 }
 
-.main_features_learn {
+.main-features-learn {
   box-shadow: 4px 16px 40px 45px #17181C;
   position: relative;
   z-index: 2;
@@ -498,8 +498,15 @@ body {
   .last-line {
     p {
       padding-right: 120px;
+      @media screen and (max-width: 765px) {
+        padding-right: 0;
+      }
     }
+    h4{
+      padding-right: 37px;
+      margin-bottom: 2px;
 
+    }
     &:after {
       bottom: 218px;
       right: -75%;
@@ -516,8 +523,8 @@ body {
   }
 }
 
-///main_features ///
-.main_features {
+///main-features ///
+.main-features {
   margin-bottom: 16px;
   background: #17181C;
   position: relative;
@@ -527,6 +534,7 @@ body {
   @media screen and (max-width: 765px) {
     background-image: url('../images/mobile-img/swamp.png');
     background-size: cover;
+    padding-bottom: 22px;
   }
   .intro-inner{
     @media screen and (max-width: 765px) {
@@ -613,8 +621,75 @@ body {
     padding-right:34px;
     margin-bottom: 2px;
   }
-  .info-text{
+       
+  .mobile-text{
+    width: 100%;
     margin:0;
+    position: relative;
+
+    @media screen and (max-width: 765px) {
+      width: 100%;
+      margin-top: 0px;
+      margin-left: 0;
+    }
+    .info-title-m3{
+      @media screen and (max-width: 565px) {
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+      line-height: 132.33%;
+      margin-bottom: 4px;
+      }
+    }
+  
+  p {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 145%;
+    color: #F2F2F2;
+    padding-right: 66px;
+    @media screen and (max-width: 565px) {
+      font-size: 16px;
+      padding: 0;
+      text-align: left;
+      padding-left: 14px;
+      line-height: 132%;
+      }
+  }
+    &:before{
+      background-image: url('../images/mobile-img/Group 346.svg');
+      left: 8px;
+      top: -35px;
+      content: "";
+      width: 15px;
+      height: 20px;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+    }
+    &:after{
+    content: "";
+    background-image: url('../images/mobile-img/Vector 23.svg');
+    height: 37px;
+    width: 6px;
+    top: -25px;
+    left: 13px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    }
+
+  margin-top: 0px;
+  .info-title-m3{
+    padding-right: 38px;
+    margin-bottom: 1px;
+  }
+
+  p{
+    padding-left: 12px;
+  }
   }
 }
 .ring:after {
@@ -739,7 +814,7 @@ body {
       font-size: 16px;
       padding: 0;
       text-align: left;
-      padding: 0 6px;
+      padding-left: 14px;
       line-height: 132%;
       }
   }

@@ -407,24 +407,30 @@ body {
 .wrapper {
   padding-top: 0; }
 
-.main_features_learn {
+.main-features-learn {
   box-shadow: 4px 16px 40px 45px #17181C;
   position: relative;
   z-index: 2;
   margin-bottom: 30px; }
-  .main_features_learn .last-line p {
+  .main-features-learn .last-line p {
     padding-right: 120px; }
-  .main_features_learn .last-line:after {
+    @media screen and (max-width: 765px) {
+      .main-features-learn .last-line p {
+        padding-right: 0; } }
+  .main-features-learn .last-line h4 {
+    padding-right: 37px;
+    margin-bottom: 2px; }
+  .main-features-learn .last-line:after {
     bottom: 218px;
     right: -75%; }
-  .main_features_learn .last-line:before {
+  .main-features-learn .last-line:before {
     bottom: 210px;
     right: -57%; }
     @media screen and (max-width: 765px) {
-      .main_features_learn .last-line:before {
+      .main-features-learn .last-line:before {
         right: unset; } }
 
-.main_features {
+.main-features {
   margin-bottom: 16px;
   background: #17181C;
   position: relative;
@@ -432,11 +438,12 @@ body {
   padding-bottom: 79px;
   box-shadow: 1px 33px 46px 45px #17181C; }
   @media screen and (max-width: 765px) {
-    .main_features {
+    .main-features {
       background-image: url("../images/mobile-img/swamp.png");
-      background-size: cover; } }
+      background-size: cover;
+      padding-bottom: 22px; } }
   @media screen and (max-width: 765px) {
-    .main_features .intro-inner {
+    .main-features .intro-inner {
       padding: 0 !important; } }
 
 .info-features {
@@ -505,8 +512,63 @@ body {
   .info-screen-mobile h4 {
     padding-right: 34px;
     margin-bottom: 2px; }
-  .info-screen-mobile .info-text {
-    margin: 0; }
+  .info-screen-mobile .mobile-text {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    margin-top: 0px; }
+    @media screen and (max-width: 765px) {
+      .info-screen-mobile .mobile-text {
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0; } }
+    @media screen and (max-width: 565px) {
+      .info-screen-mobile .mobile-text .info-title-m3 {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        line-height: 132.33%;
+        margin-bottom: 4px; } }
+    .info-screen-mobile .mobile-text p {
+      font-family: 'Karla';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 145%;
+      color: #F2F2F2;
+      padding-right: 66px; }
+      @media screen and (max-width: 565px) {
+        .info-screen-mobile .mobile-text p {
+          font-size: 16px;
+          padding: 0;
+          text-align: left;
+          padding-left: 14px;
+          line-height: 132%; } }
+    .info-screen-mobile .mobile-text:before {
+      background-image: url("../images/mobile-img/Group 346.svg");
+      left: 8px;
+      top: -35px;
+      content: "";
+      width: 15px;
+      height: 20px;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1; }
+    .info-screen-mobile .mobile-text:after {
+      content: "";
+      background-image: url("../images/mobile-img/Vector 23.svg");
+      height: 37px;
+      width: 6px;
+      top: -25px;
+      left: 13px;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1; }
+    .info-screen-mobile .mobile-text .info-title-m3 {
+      padding-right: 38px;
+      margin-bottom: 1px; }
+    .info-screen-mobile .mobile-text p {
+      padding-left: 12px; }
 
 .ring:after {
   content: "";
@@ -616,7 +678,7 @@ body {
         font-size: 16px;
         padding: 0;
         text-align: left;
-        padding: 0 6px;
+        padding-left: 14px;
         line-height: 132%; } }
 
 .ingame-tags {
