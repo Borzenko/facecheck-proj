@@ -1098,7 +1098,6 @@ body {
 
 .profile-cards {
   display: flex;
-
   align-items: center;
 }
 
@@ -1120,6 +1119,12 @@ body {
     line-height: 14px;
     text-align: center;
 
+  }
+
+  &.active {
+    .profile-circle img {
+      box-shadow: 0px 0px 15px #0BB1C3;
+    }  
   }
 
   .profile-circle img {

@@ -30,12 +30,19 @@ $(document).ready(function () {
   el.addEventListener('keyup', countCharacters, false);
 
 
-  $("#owl-demo").owlCarousel({
+  var carousel = $("#owl-demo").owlCarousel({
     navigation: true, // Show next and prev buttons
     slideSpeed: 300,
     paginationSpeed: 400,
     items: 1,
   });
+
+  // 
+  $('.profile-card').click(function() {
+    $('.profile-card').removeClass('active')
+    $(this).addClass('active')
+    carousel.trigger('to.owl.carousel', [$(this).data().slide, 300]);
+  })
 
 });
 

@@ -913,6 +913,8 @@ body {
     font-size: 12px;
     line-height: 14px;
     text-align: center; }
+  .profile-card.active .profile-circle img {
+    box-shadow: 0px 0px 15px #0BB1C3; }
   .profile-card .profile-circle img {
     border-radius: 50%;
     transition: 0.3s linear; }
