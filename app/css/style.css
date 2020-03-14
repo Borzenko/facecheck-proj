@@ -441,7 +441,8 @@ body {
   display: flex;
   justify-self: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 1; }
   @media screen and (max-width: 765px) {
     .info-features .info-title-m2 {
       text-align: left;
@@ -660,10 +661,9 @@ body {
       padding-right: 0; }
 
 .more_features {
-  z-index: 0;
+  z-index: 1;
   background: #17181C;
   padding-bottom: 80px;
-  margin-top: -108px;
   position: relative; }
   .more_features:after {
     content: "";

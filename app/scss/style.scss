@@ -538,6 +538,7 @@ body {
   justify-self: center;
   align-items: center;
   flex-direction: column;
+  z-index: 1;
 
   .info-title-m2{
     @media screen and (max-width: 765px) {
@@ -803,10 +804,9 @@ body {
 
 
 .more_features {
-  z-index: 0;
+  z-index: 1;
   background: #17181C;
   padding-bottom: 80px;
-  margin-top: -108px;
   position: relative;
 
   &:after {
