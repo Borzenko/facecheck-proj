@@ -924,16 +924,27 @@ body {
 
 .facecheck-using {
   width: 100%;
-  height: 486px;
+  padding-bottom: 86px;
   background-image: url('../images/3\ step\ bg\ 3\ 1.png');
   background-repeat: no-repeat;
   position: relative;
+  .intro-inner {
+    padding-top: 42px;
+  }
+  .info-title-m2 {
+    margin-bottom: 56px;
+  }
+
+  .button {
+    margin-bottom: 25px;
+  }
 }
 
 
 .footer {
-  background-color: black;
-  height: 290px;
+  background-color: #17181C;
+  padding-top: 22px;
+  padding-bottom: 70px;
 }
 
 .footer-social {
@@ -968,8 +979,7 @@ body {
 
 .profile-slider {
   background: #17181C url('../images/tree-pro-players.png') no-repeat;
-  padding: 50px 0;
-
+  padding: 50px 0 270px;
   background-size: cover, contain;
   background-position: center, right bottom;
   position: relative;
