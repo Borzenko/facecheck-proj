@@ -1334,8 +1334,9 @@ body {
   position: absolute;
   top: -160px;
   right: 0;
-  @media screen and (max-width: 770px) {}
-  top:0px;
+  @media screen and (max-width: 770px) {
+    top:0px;
+  }
 }
 
 .tree-2 {
@@ -1361,7 +1362,9 @@ body {
   background: #16161A !important;
   border: 1px solid #2A3036 !important;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5) !important;
-
+  @media screen and (max-width: 770px) {
+    width: auto;
+  }
   &:after {
     content: "";
     background-image: url('../images/jewel.svg');
@@ -1372,6 +1375,10 @@ body {
     bottom: -14px;
     right: 45%;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 500px) {
+      right: 41%;
+    }
   }
 }
 
