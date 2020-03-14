@@ -921,13 +921,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.footer-social a {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px;
-  font-size: 25px;
-  color: white; }
+  .footer-social a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px; }
+  .footer-social img {
+    width: 100%; }
 
 .copyright {
   font-family: 'Karla';

@@ -1114,15 +1114,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  a{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  img{
+    width: 100%;
+  }
 }
 
-.footer-social a {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px;
-  font-size: 25px;
-  color: white;
-}
 
 .copyright {
   font-family: 'Karla';
