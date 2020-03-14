@@ -24,6 +24,7 @@ body {
   font-size: 15px;
   line-height: 1.6;
   color: #333;
+  background: #17181C;
 }
 
 /*CONTAINER*/
@@ -490,7 +491,6 @@ body {
 
 .main_features_learn {
   box-shadow: 4px 16px 40px 45px #17181C;
-  background: #17181C;
   position: relative;
   z-index: 2;
 
@@ -804,8 +804,7 @@ body {
 
 
 .more_features {
-  z-index: 1;
-  background: #17181C;
+  z-index: 2;
   padding-bottom: 80px;
   position: relative;
 
