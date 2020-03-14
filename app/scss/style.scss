@@ -510,16 +510,21 @@ body {
 
     }
     &:after {
-      bottom: 218px;
+      top:32px;
       right: -75%;
-
+      @media screen and (max-width: 1047px) {
+        top: 60px;
+      }
     }
 
     &:before {
-      bottom: 210px;
+      top:41px;
       right: -57%;
       @media screen and (max-width: 765px) {
         right: unset;
+      }
+      @media screen and (max-width: 1047px) {
+        top: 69px;
       }
     }
   }
@@ -777,8 +782,12 @@ body {
     @media screen and (max-width: 1050px) {
       width: 420px;
     }
+    @media screen and (max-width: 855px) {
+      top: 66px;
+      top: 74px;
 
-    @media screen and (max-width: 795px) {
+    }
+    @media screen and (max-width: 765px) {
       display: none;
     }
     @media screen and (max-width: 465px) {
@@ -801,6 +810,9 @@ body {
     top: 48px;
     left: -225px;
     z-index: 1;
+    @media screen and (max-width: 855px) {
+      top: 82px;
+    }
     @media screen and (max-width: 465px) {
       background-image: url('../images/mobile-img/Group\ 346.svg');
       left: 8px;
@@ -877,7 +889,13 @@ body {
       right: -74%;
       left: unset;
       z-index: 1;
-
+      @media screen and (max-width: 1059px) {
+        bottom: 157px;
+        top: unset;
+      }
+      @media screen and (max-width: 972px) {
+        bottom: 181px;
+      }
     }
 
     &:before {
@@ -891,6 +909,15 @@ body {
       right: -56%;
       left: unset;
       z-index: 1;
+      @media screen and (max-width: 1059px) {
+        top: unset;
+        right: -51%;
+        bottom:149px;
+      }
+      @media screen and (max-width: 972px) {
+        right: -49%;
+        bottom: 172px;
+      }
     }
 
     p {

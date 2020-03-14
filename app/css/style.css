@@ -424,14 +424,20 @@ body {
     padding-right: 37px;
     margin-bottom: 2px; }
   .main-features-learn .last-line:after {
-    bottom: 218px;
+    top: 32px;
     right: -75%; }
+    @media screen and (max-width: 1047px) {
+      .main-features-learn .last-line:after {
+        top: 60px; } }
   .main-features-learn .last-line:before {
-    bottom: 210px;
+    top: 41px;
     right: -57%; }
     @media screen and (max-width: 765px) {
       .main-features-learn .last-line:before {
         right: unset; } }
+    @media screen and (max-width: 1047px) {
+      .main-features-learn .last-line:before {
+        top: 69px; } }
 
 .main-features {
   margin-bottom: 16px;
@@ -646,7 +652,11 @@ body {
     @media screen and (max-width: 1050px) {
       .info-text:after {
         width: 420px; } }
-    @media screen and (max-width: 795px) {
+    @media screen and (max-width: 855px) {
+      .info-text:after {
+        top: 66px;
+        top: 74px; } }
+    @media screen and (max-width: 765px) {
       .info-text:after {
         display: none; } }
     @media screen and (max-width: 465px) {
@@ -667,6 +677,9 @@ body {
     top: 48px;
     left: -225px;
     z-index: 1; }
+    @media screen and (max-width: 855px) {
+      .info-text:before {
+        top: 82px; } }
     @media screen and (max-width: 465px) {
       .info-text:before {
         background-image: url("../images/mobile-img/Group 346.svg");
@@ -729,6 +742,13 @@ body {
       right: -74%;
       left: unset;
       z-index: 1; }
+      @media screen and (max-width: 1059px) {
+        .reverse .info-text:after {
+          bottom: 157px;
+          top: unset; } }
+      @media screen and (max-width: 972px) {
+        .reverse .info-text:after {
+          bottom: 181px; } }
     .reverse .info-text:before {
       content: "";
       background-image: url("../images/Rectangle.svg");
@@ -740,6 +760,15 @@ body {
       right: -56%;
       left: unset;
       z-index: 1; }
+      @media screen and (max-width: 1059px) {
+        .reverse .info-text:before {
+          top: unset;
+          right: -51%;
+          bottom: 149px; } }
+      @media screen and (max-width: 972px) {
+        .reverse .info-text:before {
+          right: -49%;
+          bottom: 172px; } }
     .reverse .info-text p {
       padding-right: 0; }
 
