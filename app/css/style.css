@@ -489,7 +489,7 @@ body {
   @media screen and (max-width: 765px) {
     .info-body {
       flex-wrap: wrap;
-      margin-top: 30px; } }
+      margin-top: 25px; } }
 
 .info-screen {
   width: 49.2%;
@@ -501,7 +501,12 @@ body {
       width: 100%; } }
 
 .info-screen-mobile {
-  margin-top: 30px; }
+  margin-top: 56px; }
+  .info-screen-mobile h4 {
+    padding-right: 34px;
+    margin-bottom: 2px; }
+  .info-screen-mobile .info-text {
+    margin: 0; }
 
 .ring:after {
   content: "";
