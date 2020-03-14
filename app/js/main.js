@@ -27,7 +27,7 @@ $(document).ready(function () {
   });
 
   var el = document.getElementById('desc');
-  el.addEventListener('keyup', countCharacters, false);
+  el.addEventListener('keydown', countCharacters, false);
 
 
   var carousel = $("#owl-demo").owlCarousel({

@@ -919,6 +919,10 @@ body {
   }
 }
 
+.blocker {
+  z-index: 1001;
+}
+
 .card-wrapper {
   display: flex;
   width: calc(25% - 20px);

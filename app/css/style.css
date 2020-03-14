@@ -748,6 +748,9 @@ body {
       height: 44px;
       margin-top: 26px; }
 
+.blocker {
+  z-index: 1001; }
+
 .card-wrapper {
   display: flex;
   width: calc(25% - 20px);
