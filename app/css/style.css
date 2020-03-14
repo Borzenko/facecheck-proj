@@ -412,6 +412,9 @@ body {
   position: relative;
   z-index: 2;
   margin-bottom: 30px; }
+  @media screen and (max-width: 765px) {
+    .main-features-learn {
+      margin-bottom: -22px; } }
   .main-features-learn .last-line p {
     padding-right: 120px; }
     @media screen and (max-width: 765px) {
@@ -736,12 +739,12 @@ body {
     .reverse .info-text p {
       padding-right: 0; }
 
-.more_features {
+.more-features {
   z-index: 2;
   padding-bottom: 80px;
   position: relative;
   margin-bottom: 13px; }
-  .more_features:after {
+  .more-features:after {
     content: "";
     background-image: url("../images/tree1.png");
     width: 615px;
@@ -751,9 +754,14 @@ body {
     left: 0px;
     background-repeat: no-repeat; }
     @media screen and (max-width: 950px) {
-      .more_features:after {
+      .more-features:after {
         top: 233px; } }
-  .more_features:before {
+    @media screen and (max-width: 750px) {
+      .more-features:after {
+        background-image: url("../images/mobile-img/tree2.png");
+        width: 590px;
+        height: 298px; } }
+  .more-features:before {
     content: "";
     background-image: url("../images/tree2.png");
     width: 1475px;
@@ -764,8 +772,14 @@ body {
     background-repeat: no-repeat;
     z-index: 1; }
     @media screen and (max-width: 950px) {
-      .more_features:before {
+      .more-features:before {
         top: -76px; } }
+    @media screen and (max-width: 750px) {
+      .more-features:before {
+        background-image: url("../images/mobile-img/tree2 (1).png");
+        width: 391px;
+        height: 309px;
+        top: 14px; } }
 
 .cards-inner {
   justify-content: space-between;
@@ -787,6 +801,9 @@ body {
       font-size: 18px;
       line-height: 145%;
       color: #F1BC51; }
+      @media screen and (max-width: 550px) {
+        .cards-inner .card-inactive .inactive-text {
+          font-size: 13px; } }
     .cards-inner .card-inactive p {
       padding: 0; }
   .cards-inner .card {
@@ -798,6 +815,14 @@ body {
     .cards-inner .card .card-title {
       padding: 18px 18px 0px;
       border-bottom: 1px solid #F1BC51; }
+      @media screen and (max-width: 570px) {
+        .cards-inner .card .card-title {
+          padding: 9px 13px 0px; } }
+      @media screen and (max-width: 570px) {
+        .cards-inner .card .card-title .info-title-m3 {
+          font-size: 13.0421px;
+          line-height: 132.33%;
+          margin-bottom: 12px; } }
     .cards-inner .card p {
       padding: 27px 13px 48px;
       font-family: 'Karla';
@@ -805,6 +830,11 @@ body {
       line-height: 145%;
       text-align: center;
       color: #F2F2F2; }
+      @media screen and (max-width: 570px) {
+        .cards-inner .card p {
+          font-size: 13px;
+          line-height: 145%;
+          padding: 11px 7px 28px; } }
     .cards-inner .card img {
       width: 45.63px;
       height: 44px;
@@ -825,6 +855,11 @@ body {
     .card-wrapper {
       width: calc(50% - 10px);
       margin-bottom: 20px; } }
+  @media screen and (max-width: 650px) {
+    .card-wrapper {
+      width: calc(50% - 6px);
+      margin-bottom: 7px;
+      padding: 2px; } }
 
 .facecheck-using {
   width: 100%;
