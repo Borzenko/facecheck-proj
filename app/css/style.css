@@ -428,7 +428,7 @@ body {
   background: #17181C;
   position: relative;
   z-index: 2;
-  padding-bottom: 86px;
+  padding-bottom: 79px;
   box-shadow: 1px 33px 46px 45px #17181C; }
   @media screen and (max-width: 765px) {
     .main_features {
@@ -487,9 +487,10 @@ body {
       margin-top: 30px; } }
 
 .info-screen {
-  width: 48%;
+  width: 49.2%;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding-top: 5px; }
   @media screen and (max-width: 765px) {
     .info-screen {
       width: 100%; } }
@@ -534,9 +535,8 @@ body {
 
 .info-text {
   position: relative;
-  margin-left: 33px;
   margin-top: -6px;
-  width: 36%; }
+  width: 36.4%; }
   @media screen and (max-width: 765px) {
     .info-text {
       width: 100%;
@@ -609,7 +609,7 @@ body {
   background-image: url("../images/swamp.png");
   background-repeat: no-repeat;
   padding-top: 14px;
-  padding-bottom: 124px; }
+  padding-bottom: 142px; }
   @media screen and (max-width: 1420px) {
     .ingame-tags {
       overflow: hidden; } }
