@@ -594,7 +594,7 @@ body {
   z-index: 1;
   @media screen and (max-width: 765px) {
    flex-wrap:wrap;
-   margin-top: 30px;
+   margin-top: 25px;
   }
 }
 
@@ -608,7 +608,14 @@ body {
   }
  }
 .info-screen-mobile{
-  margin-top:30px;
+  margin-top: 56px;
+  h4{
+    padding-right:34px;
+    margin-bottom: 2px;
+  }
+  .info-text{
+    margin:0;
+  }
 }
 .ring:after {
   content: "";
