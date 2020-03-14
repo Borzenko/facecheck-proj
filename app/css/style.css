@@ -471,11 +471,13 @@ body {
   font-weight: normal;
   font-size: 36px;
   line-height: 130%;
-  text-align: center;
   color: #F1BC51;
   margin-top: 50px;
   width: 100%;
   margin-bottom: 40px; }
+
+.ta-c {
+  text-align: center; }
 
 .info-body {
   display: flex;
@@ -664,7 +666,8 @@ body {
 .more_features {
   z-index: 2;
   padding-bottom: 80px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 13px; }
   .more_features:after {
     content: "";
     background-image: url("../images/tree1.png");
@@ -787,6 +790,8 @@ body {
   background-size: cover, contain;
   background-position: center, right bottom;
   position: relative; }
+  .profile-slider .info-title-m2 {
+    padding-left: 10px; }
   .profile-slider:after {
     content: "";
     background-image: url("../images/tree-pro-players.png");
@@ -902,13 +907,15 @@ body {
 
 .profile-cards {
   display: flex;
+  margin-top: 52px;
+  justify-content: space-between;
+  width: 320px;
   align-items: center; }
 
 .profile-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 10px;
   color: #CCBA97;
   transition: 0.3s linear; }
   .profile-card:hover {
