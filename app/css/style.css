@@ -564,7 +564,7 @@ body {
     @media screen and (max-width: 795px) {
       .info-text:after {
         display: none; } }
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 465px) {
       .info-text:after {
         display: block;
         background-image: url("../images/mobile-img/Vector 23.svg");
@@ -582,7 +582,7 @@ body {
     top: 48px;
     left: -225px;
     z-index: 1; }
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 465px) {
       .info-text:before {
         background-image: url("../images/mobile-img/Group 346.svg");
         left: 8px;
