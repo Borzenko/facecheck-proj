@@ -493,6 +493,7 @@ body {
   box-shadow: 4px 16px 40px 45px #17181C;
   position: relative;
   z-index: 2;
+  margin-bottom: 30px;
 
   .last-line {
     p {
@@ -841,6 +842,7 @@ body {
 }
 
 .cards-inner {
+  justify-content: space-between;
   display: flex;
   width: 100%;
   z-index: 4;
@@ -880,25 +882,30 @@ body {
     z-index: 1;
 
     .card-title {
-      padding: 20px 30px;
+      padding: 18px 18px 0px;
       border-bottom: 1px solid #F1BC51;
     }
 
     p {
-      padding: 5px 6px 25px 27px;
+      padding: 27px 13px 48px;
       font-family: 'Karla';
       font-size: 18px;
       line-height: 145%;
       text-align: center;
       color: #F2F2F2;
     }
+
+    img {
+      width: 45.63px;
+      height: 44px;
+      margin-top: 26px;
+    }
   }
 }
 
 .card-wrapper {
   display: flex;
-  margin-right: 20px;
-  width: 33%;
+  width: calc(25% - 20px);
   background: #1D1E22;
   padding: 4px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
