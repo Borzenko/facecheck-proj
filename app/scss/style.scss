@@ -1341,8 +1341,11 @@ body {
   }
 
   .profile-progress {
+    margin-top: 8px;
     position: relative;
-
+    width: 62px;
+    height: 5px;
+    border: 1px solid #F1BC51;
     &:after {
       content: "";
       background-image: url('../images/timer\ head_\ empty.svg');
@@ -1350,7 +1353,7 @@ body {
       height: 15px;
       z-index: 100;
       position: absolute;
-      bottom: 2px;
+      bottom: -5px;
       right: 37%;
       background-repeat: no-repeat;
     }
