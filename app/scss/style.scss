@@ -589,6 +589,10 @@ body {
   margin-top: 50px;
   width: 100%;
   margin-bottom: 40px;
+  @media screen and (max-width: 455px) {
+    font-size: 22px;
+    line-height: 132.33%;
+   }
 }
 
 .ta-c {
@@ -902,7 +906,10 @@ body {
   padding-bottom: 80px;
   position: relative;
   margin-bottom: 13px;
-
+  @media screen and (max-width: 765px) {
+    margin-bottom: 0;
+    padding-bottom:0;
+  }
   &:after {
     content: "";
     background-image: url('../images/tree1.png');
@@ -918,7 +925,7 @@ body {
     }
     @media screen and (max-width: 750px) {
       background-image: url('../images/mobile-img/tree2.png');
-      width: 590px;
+      width: 260px;
       height: 298px;
     }
   }
@@ -1111,7 +1118,9 @@ body {
   background-size: cover, contain;
   background-position: center, right bottom;
   position: relative;
-
+  @media screen and (max-width: 765px) {
+    padding-top: 0;
+  }
   .info-title-m2 {
     padding-left: 10px;
     margin-top: 32px;
@@ -1133,7 +1142,15 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: -39px;
-
+  @media screen and (max-width: 765px) {
+    flex-wrap: wrap;
+   }
+  .info-title-m2{
+    @media screen and (max-width: 765px) {
+      margin-top: 24px;
+      padding-left: 20px;
+    }
+   }
 }
 
 .slider-card {
@@ -1317,13 +1334,19 @@ body {
   position: absolute;
   top: -160px;
   right: 0;
+  @media screen and (max-width: 770px) {}
+  top:0px;
 }
 
 .tree-2 {
   position: absolute;
   top: -160px;
   left: 0;
+  @media screen and (max-width: 770px) {
+    top:0px;
+  }
 }
+
 
 .owl-carousel .owl-item img {
   display: block;

@@ -486,6 +486,10 @@ body {
   margin-top: 50px;
   width: 100%;
   margin-bottom: 40px; }
+  @media screen and (max-width: 455px) {
+    .info-title-m2 {
+      font-size: 22px;
+      line-height: 132.33%; } }
 
 .ta-c {
   text-align: center; }
@@ -744,6 +748,10 @@ body {
   padding-bottom: 80px;
   position: relative;
   margin-bottom: 13px; }
+  @media screen and (max-width: 765px) {
+    .more-features {
+      margin-bottom: 0;
+      padding-bottom: 0; } }
   .more-features:after {
     content: "";
     background-image: url("../images/tree1.png");
@@ -759,7 +767,7 @@ body {
     @media screen and (max-width: 750px) {
       .more-features:after {
         background-image: url("../images/mobile-img/tree2.png");
-        width: 590px;
+        width: 260px;
         height: 298px; } }
   .more-features:before {
     content: "";
@@ -911,6 +919,9 @@ body {
   background-size: cover, contain;
   background-position: center, right bottom;
   position: relative; }
+  @media screen and (max-width: 765px) {
+    .profile-slider {
+      padding-top: 0; } }
   .profile-slider .info-title-m2 {
     padding-left: 10px;
     margin-top: 32px; }
@@ -928,6 +939,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: -39px; }
+  @media screen and (max-width: 765px) {
+    .slider-wrapper {
+      flex-wrap: wrap; } }
+  @media screen and (max-width: 765px) {
+    .slider-wrapper .info-title-m2 {
+      margin-top: 24px;
+      padding-left: 20px; } }
 
 .slider-card {
   display: flex;
@@ -1070,12 +1088,16 @@ body {
 .tree-1 {
   position: absolute;
   top: -160px;
-  right: 0; }
+  right: 0;
+  top: 0px; }
 
 .tree-2 {
   position: absolute;
   top: -160px;
   left: 0; }
+  @media screen and (max-width: 770px) {
+    .tree-2 {
+      top: 0px; } }
 
 .owl-carousel .owl-item img {
   display: block;
