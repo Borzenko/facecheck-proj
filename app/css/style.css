@@ -433,7 +433,8 @@ body {
   box-shadow: 1px 33px 46px 45px #17181C; }
   @media screen and (max-width: 765px) {
     .main_features {
-      background-image: url("../images/mobile-img/feature 2 bg.png"); } }
+      background-image: url("../images/mobile-img/swamp.png");
+      background-size: cover; } }
   @media screen and (max-width: 765px) {
     .main_features .intro-inner {
       padding: 0 !important; } }
@@ -498,6 +499,9 @@ body {
   @media screen and (max-width: 765px) {
     .info-screen {
       width: 100%; } }
+
+.info-screen-mobile {
+  margin-top: 30px; }
 
 .ring:after {
   content: "";

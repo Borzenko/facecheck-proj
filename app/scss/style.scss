@@ -525,7 +525,8 @@ body {
   padding-bottom: 79px;
   box-shadow: 1px 33px 46px 45px #17181C;
   @media screen and (max-width: 765px) {
-    background-image: url('../images/mobile-img/feature\ 2\ bg.png');
+    background-image: url('../images/mobile-img/swamp.png');
+    background-size: cover;
   }
   .intro-inner{
     @media screen and (max-width: 765px) {
@@ -606,7 +607,9 @@ body {
    width: 100%;
   }
  }
-
+.info-screen-mobile{
+  margin-top:30px;
+}
 .ring:after {
   content: "";
   background-image: url('../images/ring asset 2.svg');
