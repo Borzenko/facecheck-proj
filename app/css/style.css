@@ -407,9 +407,8 @@ body {
   padding-top: 0; }
 
 .main_features_learn {
-  box-shadow: 4px 46px 45px #17181C;
+  box-shadow: 4px 16px 40px 45px #17181C;
   background: #17181C;
-  height: 555px;
   position: relative;
   z-index: 2; }
   .main_features_learn .last-line p {
