@@ -46,6 +46,12 @@ $(document).ready(function () {
 
 });
 
+$('.drop-down-arrow').click(function() {
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $(".main_features").offset().top
+  }, 500);
+});
+
 var countCharacters = function(e) {
   var textEntered, countRemaining, counter;
   textEntered = document.getElementById('desc').value;
