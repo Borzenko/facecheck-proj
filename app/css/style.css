@@ -286,7 +286,7 @@ body {
   z-index: 1;
 
 } */
-.download_desctop_app {
+.download-desktop-app {
   position: relative;
   padding-top: 109px;
   background-image: url("../images/Rectangle 21.png");
@@ -294,11 +294,11 @@ body {
   height: 942px;
   background-repeat: no-repeat; }
   @media screen and (max-width: 765px) {
-    .download_desctop_app {
+    .download-desktop-app {
       background-position: center;
       padding-top: 50px;
       height: auto; } }
-  .download_desctop_app .drop-down-arrow {
+  .download-desktop-app .drop-down-arrow {
     background-image: url("../images/Arrow.svg");
     background-size: 59px 17px;
     width: 80px;
@@ -312,7 +312,7 @@ body {
     background-size: 100%;
     cursor: pointer; }
     @media screen and (max-width: 795px) {
-      .download_desctop_app .drop-down-arrow {
+      .download-desktop-app .drop-down-arrow {
         display: none; } }
 
 .intro-inner {
@@ -367,7 +367,7 @@ body {
       display: inline-block; } }
 
 @media screen and (max-width: 765px) {
-  .desctop-content {
+  .desktop-content {
     display: none; } }
 
 .button {
