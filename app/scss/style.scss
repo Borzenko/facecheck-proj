@@ -981,7 +981,7 @@ body {
   &:after {
     content: "";
     background-image: url('../images/tree1.png');
-    width: 615px;
+    width: 760px;
     height: 600px;
     position: absolute;
     top: -110px;
@@ -1136,6 +1136,7 @@ body {
   }
   .info-title-m2 {
     margin-bottom: 56px;
+    z-index: 1;
   }
 
   .button {
@@ -1171,7 +1172,7 @@ body {
   font-family: 'Karla';
   font-style: normal;
   font-weight: normal;
-  margin-top: 20px;
+  margin-top: 24px;
   font-size: 14px;
   line-height: 20px;
   display: flex;
@@ -1179,21 +1180,23 @@ body {
   text-align: center;
   color: #D1E3F0;
   opacity: 0.5;
+  padding: 0 57px
 }
 
 
 .profile-slider {
   background: #17181C url('../images/tree-pro-players.png') no-repeat;
-  padding: 50px 0 270px;
+  padding: 50px 0 263px;
   background-size: cover, contain;
-  background-position: center, right bottom;
+  background-position: center, top;
   position: relative;
+  background-position-y: -559px;
   @media screen and (max-width: 765px) {
     padding-top: 0;
   }
   .info-title-m2 {
-    padding-left: 10px;
-    margin-top: 32px;
+    padding-left: 4px;
+    margin-top: 45px;
   }
 
   &:after {
@@ -1230,13 +1233,13 @@ body {
   width: 100%;
   height: 252px;
   border: 1px solid #C59A43;
-  margin-top: 50px;
+  margin-top: 63px;
 }
 
 .slider-avatar {
   position: relative;
-  margin: 0 80px;
-  margin-top: -27px;
+  margin:0px 100px 0 60px; 
+  height: 100%;
 
   &:before {
     content: "";
@@ -1245,7 +1248,7 @@ body {
     height: 354px;
     z-index: 100;
     position: absolute;
-    bottom: -1px;
+    bottom: 22px;
     right: 8px;
     background-repeat: no-repeat;
   }
@@ -1259,7 +1262,7 @@ body {
     height: 354px;
     z-index: 100;
     position: absolute;
-    bottom: -1px;
+    bottom: 22px;
     right: 8px;
     background-repeat: no-repeat;
   }
@@ -1273,7 +1276,7 @@ body {
     height: 354px;
     z-index: 100;
     position: absolute;
-    bottom: -1px;
+    bottom: 22px;
     right: 8px;
     background-repeat: no-repeat;
   }
@@ -1284,12 +1287,14 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-left: 34px;
+  padding-top: 9px;
 
   &:before {
     content: "“";
     position: absolute;
-    bottom: 5px;
-    right: 181px;
+    bottom: 11px;
+    right: 137px;
     font-family: 'Marcellus';
     font-size: 96px;
     line-height: 129.39%;
@@ -1302,7 +1307,7 @@ body {
   &:after {
     content: "“";
     position: absolute;
-    top: -40px;
+    top: -30px;
     left: 0px;
     font-family: 'Marcellus';
     font-size: 96px;
@@ -1329,7 +1334,7 @@ body {
   span {
     margin-top: 10px;
     display: block;
-    padding-right: 184px;
+    padding-right: 137px;
     padding-left: 10px;
     font-family: 'Marcellus';
     font-size: 30px;
@@ -1355,7 +1360,9 @@ body {
   align-items: center;
   color: #CCBA97;
   transition: 0.3s linear;
-
+  &:first-child{
+    margin-left: -8px;
+  }
   &:hover {
     color: #E6E1D8;
   }
@@ -1405,7 +1412,7 @@ body {
 
 .tree-1 {
   position: absolute;
-  top: -160px;
+  top: -189px;
   right: 0;
   @media screen and (max-width: 770px) {
     top:0px;
@@ -1414,7 +1421,7 @@ body {
 
 .tree-2 {
   position: absolute;
-  top: -160px;
+  top: -194px;
   left: 0;
   @media screen and (max-width: 770px) {
     top:0px;
