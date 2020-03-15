@@ -554,7 +554,7 @@ body {
           font-size: 16px;
           padding: 0;
           text-align: left;
-          padding-left: 14px;
+          padding-left: 12px;
           line-height: 132%; } }
     @media screen and (max-width: 465px) {
       .info-screen-mobile .mobile-text:before {
@@ -581,8 +581,6 @@ body {
     .info-screen-mobile .mobile-text .info-title-m3 {
       padding-right: 38px;
       margin-bottom: 1px; }
-    .info-screen-mobile .mobile-text p {
-      padding-left: 12px; }
 
 .ring:after {
   content: "";
