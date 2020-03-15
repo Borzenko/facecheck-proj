@@ -1193,10 +1193,12 @@ body {
   background-position-y: -559px;
   @media screen and (max-width: 765px) {
     padding-top: 0;
+    background: #17181C;
   }
   .info-title-m2 {
     padding-left: 4px;
     margin-top: 45px;
+    
   }
 
   &:after {
@@ -1222,6 +1224,8 @@ body {
     @media screen and (max-width: 765px) {
       margin-top: 24px;
       padding-left: 20px;
+      z-index: 2;
+
     }
    }
 }
@@ -1234,7 +1238,10 @@ body {
   height: 252px;
   border: 1px solid #C59A43;
   margin-top: 63px;
-  
+  @media screen and (max-width: 765px) {
+  margin: 63px auto;
+  width: 90%;
+  }
 }
 
 
@@ -1242,7 +1249,9 @@ body {
   position: relative;
   margin:0px 100px 0 60px; 
   height: 100%;
-
+  @media screen and (max-width: 765px) {
+    display: none;
+    }
   &:before {
     content: "";
     background-image: url('../images/bunnyfufuu.png');

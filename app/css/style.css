@@ -992,7 +992,8 @@ body {
   background-position-y: -559px; }
   @media screen and (max-width: 765px) {
     .profile-slider {
-      padding-top: 0; } }
+      padding-top: 0;
+      background: #17181C; } }
   .profile-slider .info-title-m2 {
     padding-left: 4px;
     margin-top: 45px; }
@@ -1016,7 +1017,8 @@ body {
   @media screen and (max-width: 765px) {
     .slider-wrapper .info-title-m2 {
       margin-top: 24px;
-      padding-left: 20px; } }
+      padding-left: 20px;
+      z-index: 2; } }
 
 .slider-card {
   display: flex;
@@ -1026,11 +1028,18 @@ body {
   height: 252px;
   border: 1px solid #C59A43;
   margin-top: 63px; }
+  @media screen and (max-width: 765px) {
+    .slider-card {
+      margin: 63px auto;
+      width: 90%; } }
 
 .slider-avatar {
   position: relative;
   margin: 0px 100px 0 60px;
   height: 100%; }
+  @media screen and (max-width: 765px) {
+    .slider-avatar {
+      display: none; } }
   .slider-avatar:before {
     content: "";
     background-image: url("../images/bunnyfufuu.png");
