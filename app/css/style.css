@@ -944,13 +944,37 @@ body {
   background-image: url("../images/3 step bg 3 1.png");
   background-repeat: no-repeat;
   position: relative; }
+  @media screen and (max-width: 765px) {
+    .facecheck-using {
+      padding-bottom: 13px; } }
   .facecheck-using .intro-inner {
     padding-top: 42px; }
+    @media screen and (max-width: 765px) {
+      .facecheck-using .intro-inner {
+        padding-top: 0; } }
+  .facecheck-using p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal; }
+    @media screen and (max-width: 765px) {
+      .facecheck-using p {
+        font-size: 12px;
+        line-height: 140%;
+        margin-bottom: 0; } }
   .facecheck-using .info-title-m2 {
     margin-bottom: 56px;
     z-index: 1; }
+    @media screen and (max-width: 765px) {
+      .facecheck-using .info-title-m2 {
+        margin: 0;
+        margin-top: 21px;
+        padding: 0 20px; } }
   .facecheck-using .button {
     margin-bottom: 25px; }
+    @media screen and (max-width: 765px) {
+      .facecheck-using .button {
+        margin-bottom: 22px;
+        margin-top: 15px; } }
 
 .footer {
   background-color: #17181C;

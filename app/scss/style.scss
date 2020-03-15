@@ -1131,16 +1131,41 @@ body {
   background-image: url('../images/3\ step\ bg\ 3\ 1.png');
   background-repeat: no-repeat;
   position: relative;
+  @media screen and (max-width: 765px) {
+  padding-bottom: 13px;
+  }
   .intro-inner {
     padding-top: 42px;
+    @media screen and (max-width: 765px) {
+      padding-top:0;
+    }
+  }
+  p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    @media screen and (max-width: 765px) {
+    font-size: 12px;
+    line-height: 140%;
+    margin-bottom: 0;
+    }
   }
   .info-title-m2 {
     margin-bottom: 56px;
     z-index: 1;
+    @media screen and (max-width: 765px) {
+      margin:0;
+      margin-top: 21px;
+      padding: 0 20px;
+    }
   }
 
   .button {
     margin-bottom: 25px;
+    @media screen and (max-width: 765px) {
+      margin-bottom: 22px;
+      margin-top: 15px;
+    }
   }
 }
 
