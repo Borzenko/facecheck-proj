@@ -301,8 +301,8 @@ body {
   .download_desctop_app .drop-down-arrow {
     background-image: url("../images/Arrow.svg");
     background-size: 59px 17px;
-    width: 54px;
-    height: 30px;
+    width: 80px;
+    height: 43px;
     background-repeat: no-repeat;
     position: absolute;
     bottom: 11px;
