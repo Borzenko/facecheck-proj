@@ -130,8 +130,6 @@ body {
   justify-self: start;
   width: 100%;
   border-bottom: 1px solid #202529; }
-  .mobile-wrapper:last-child {
-    border-bottom: none; }
 
 .nav {
   position: relative;

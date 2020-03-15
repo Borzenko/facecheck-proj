@@ -9,7 +9,8 @@ $(document).ready(function () {
     loop: true,
     easing: 'easeInOutSine'
   });
-
+  $('.mobile-inner .mobile-wrapper:last')
+  .css('border-bottom', 'none');
   $("#nav_toggle").on("click", function (event) {
     event.preventDefault();
     $(this).toggleClass("active");

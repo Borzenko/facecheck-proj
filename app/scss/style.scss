@@ -150,10 +150,6 @@ body {
   justify-self: start;
   width: 100%;
   border-bottom: 1px solid #202529;
-
-  &:last-child {
-    border-bottom: none;
-  }
 }
 
 .nav {
@@ -227,6 +223,7 @@ body {
   padding: 72px 20px;
   background: #2A3036;
   height: 100vh;
+
 }
 
 @media screen and (max-width: 795px) {
