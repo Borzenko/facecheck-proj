@@ -1053,16 +1053,71 @@ body {
   right: 8px;
   background-repeat: no-repeat; }
 
-.glacier-image:before {
-  content: "";
-  background-image: url("../images/theglacier.png");
-  width: 226px;
-  height: 354px;
-  z-index: 100;
-  position: absolute;
-  bottom: 22px;
-  right: 8px;
-  background-repeat: no-repeat; }
+.glacier-image {
+  margin-right: 5px; }
+  .glacier-image:before {
+    content: "";
+    background-image: url("../images/theglacier.png");
+    width: 226px;
+    height: 354px;
+    z-index: 100;
+    position: absolute;
+    bottom: 22px;
+    right: 8px;
+    background-repeat: no-repeat; }
+
+.glacier-quote {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 34px;
+  padding-top: 9px; }
+  .glacier-quote:after {
+    content: "“";
+    position: absolute;
+    top: -30px;
+    font-family: 'Marcellus';
+    font-size: 96px;
+    line-height: 129.39%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(241, 188, 81, 0.5);
+    left: 83px; }
+  .glacier-quote:before {
+    content: "“";
+    position: absolute;
+    bottom: 11px;
+    right: 137px;
+    font-family: 'Marcellus';
+    font-size: 96px;
+    line-height: 129.39%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(241, 188, 81, 0.5);
+    transform: rotate(180deg); }
+  .glacier-quote p {
+    padding-left: 80px;
+    padding-right: 10px;
+    max-width: 780px;
+    margin: 0;
+    font-family: 'Marcellus';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 130%;
+    color: #C59A43; }
+  .glacier-quote span {
+    margin-top: 10px;
+    display: block;
+    padding-right: 137px;
+    padding-left: 10px;
+    font-family: 'Marcellus';
+    font-size: 30px;
+    line-height: 38px;
+    text-align: right;
+    text-transform: capitalize;
+    color: #CCBA97; }
 
 .slider-quote {
   width: 100%;
