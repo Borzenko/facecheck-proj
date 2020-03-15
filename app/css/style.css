@@ -143,7 +143,7 @@ body {
       display: none;
       width: 75%;
       position: absolute;
-      top: 100%;
+      top: 109%;
       left: 0;
       background: #2A3036; } }
   .nav .nav_link {
@@ -160,7 +160,7 @@ body {
     transition: color .5s linear; }
     @media screen and (max-width: 795px) {
       .nav .nav_link {
-        padding: 20px 5px;
+        padding: 15px 5px;
         margin: 0;
         margin-left: 15px; } }
     .nav .nav_link:after {
@@ -186,8 +186,8 @@ body {
 
 .mobile-inner {
   position: relative;
-  width: 75%;
-  padding: 72px 20px;
+  width: 76%;
+  padding: 53px 20px;
   background: #2A3036;
   height: 100vh; }
 
@@ -271,8 +271,8 @@ body {
 
 #close-mobile {
   position: absolute;
-  right: 20px;
-  top: 43px;
+  right: 25px;
+  top: 24px;
   cursor: pointer; }
 
 /* .nav-toggle_item:before,
