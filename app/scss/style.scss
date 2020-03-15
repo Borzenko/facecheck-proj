@@ -45,6 +45,28 @@ body {
   position: relative;
   padding: 0 50px 0 40px;
   z-index: 1;
+  &:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #202529;
+    display: block;
+    display: block;
+    left: -2px;
+    bottom: 8px;
+  }
+  &:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #202529;
+    display: block;
+    display: block;
+    right: -2px;
+    bottom: 8px;
+  }
 
   @media screen and (max-width: 795px) {
     justify-content: center;
@@ -110,7 +132,6 @@ body {
 }
 
 .header {
-  padding-top: 6px;
   position: absolute;
   width: 100%;
   top: 0;
