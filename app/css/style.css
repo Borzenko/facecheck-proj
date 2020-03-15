@@ -980,16 +980,31 @@ body {
   background-color: #17181C;
   padding-top: 22px;
   padding-bottom: 70px; }
+  @media screen and (max-width: 765px) {
+    .footer {
+      padding-bottom: 21px; } }
 
 .footer-social {
-  padding-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  padding-top: 100px; }
+  @media screen and (max-width: 765px) {
+    .footer-social {
+      padding-top: 0px; } }
+  .footer-social .social-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 765px) {
+      .footer-social .social-wrapper {
+        width: 71%;
+        margin: 0 auto;
+        justify-content: space-between; } }
   .footer-social a {
     display: inline-block;
     vertical-align: middle;
     margin-left: 15px; }
+    @media screen and (max-width: 765px) {
+      .footer-social a {
+        margin-left: 0; } }
   .footer-social img {
     width: 100%; }
 
@@ -1006,6 +1021,12 @@ body {
   color: #D1E3F0;
   opacity: 0.5;
   padding: 0 57px; }
+  @media screen and (max-width: 765px) {
+    .copyright {
+      font-size: 12px;
+      line-height: 13px;
+      margin-top: 14px;
+      padding: 0 18px; } }
 
 .profile-slider {
   background: #17181C url("../images/tree-pro-players.png") no-repeat;

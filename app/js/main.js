@@ -61,11 +61,3 @@ var countCharacters = function(e) {
   countRemaining.textContent = counter;
 }
 
-var animation = anime({
-  targets: '.info-text:before',
-  translateX: 250,
-  delay: function(el, i) { return i * 100; },
-  direction: 'alternate',
-  loop: true,
-  easing: 'easeInOutSine'
-});

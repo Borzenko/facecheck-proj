@@ -1174,18 +1174,35 @@ body {
   background-color: #17181C;
   padding-top: 22px;
   padding-bottom: 70px;
+  @media screen and (max-width: 765px) {
+    padding-bottom: 21px;
+  }
 }
+
+
 
 .footer-social {
   padding-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  @media screen and (max-width: 765px) {
+    padding-top:0px;
+  }
+  .social-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 765px) {
+    width: 71%;
+    margin: 0 auto;
+    justify-content: space-between;
+    }
+  }
   a{
     display: inline-block;
     vertical-align: middle;
     margin-left: 15px;
+    @media screen and (max-width: 765px) {
+      margin-left: 0;
+    }
   }
   img{
     width: 100%;
@@ -1205,7 +1222,13 @@ body {
   text-align: center;
   color: #D1E3F0;
   opacity: 0.5;
-  padding: 0 57px
+  padding: 0 57px;
+  @media screen and (max-width: 765px) {
+    font-size: 12px;
+    line-height: 13px;
+    margin-top: 14px;
+    padding: 0 18px;
+  }
 }
 
 
