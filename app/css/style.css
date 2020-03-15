@@ -1031,7 +1031,8 @@ body {
   @media screen and (max-width: 765px) {
     .slider-card {
       margin: 63px auto;
-      width: 90%; } }
+      width: 90%;
+      height: 79px; } }
 
 .slider-avatar {
   position: relative;
@@ -1096,6 +1097,10 @@ body {
     @media screen and (max-width: 1025px) {
       .glacier-quote:after {
         font-size: 75px; } }
+    @media screen and (max-width: 765px) {
+      .glacier-quote:after {
+        font-size: 36px;
+        line-height: 129.39%; } }
   .glacier-quote:before {
     content: "“";
     position: absolute;
@@ -1111,6 +1116,10 @@ body {
     @media screen and (max-width: 1025px) {
       .glacier-quote:before {
         font-size: 75px; } }
+    @media screen and (max-width: 765px) {
+      .glacier-quote:before {
+        font-size: 36px;
+        line-height: 129.39%; } }
   .glacier-quote p {
     padding-left: 80px;
     padding-right: 10px;
@@ -1129,6 +1138,10 @@ body {
       .glacier-quote p {
         font-size: 28px;
         padding-left: 0px; } }
+    @media screen and (max-width: 765px) {
+      .glacier-quote p {
+        font-size: 18px;
+        line-height: 130%; } }
   .glacier-quote span {
     margin-top: 10px;
     display: block;
@@ -1143,6 +1156,9 @@ body {
     @media screen and (max-width: 1025px) {
       .glacier-quote span {
         font-size: 20px; } }
+    @media screen and (max-width: 765px) {
+      .glacier-quote span {
+        display: none; } }
 
 .slider-quote {
   width: 100%;
@@ -1166,6 +1182,10 @@ body {
     @media screen and (max-width: 1025px) {
       .slider-quote:before {
         font-size: 75px; } }
+    @media screen and (max-width: 765px) {
+      .slider-quote:before {
+        font-size: 36px;
+        line-height: 129.39%; } }
   .slider-quote:after {
     content: "“";
     position: absolute;
@@ -1180,6 +1200,10 @@ body {
     @media screen and (max-width: 1025px) {
       .slider-quote:after {
         font-size: 75px; } }
+    @media screen and (max-width: 765px) {
+      .slider-quote:after {
+        font-size: 36px;
+        line-height: 129.39%; } }
   .slider-quote p {
     padding-left: 80px;
     padding-right: 10px;
@@ -1198,6 +1222,10 @@ body {
       .slider-quote p {
         font-size: 28px;
         padding-left: 0px; } }
+    @media screen and (max-width: 765px) {
+      .slider-quote p {
+        font-size: 18px;
+        line-height: 130%; } }
   .slider-quote span {
     margin-top: 10px;
     display: block;
@@ -1213,6 +1241,64 @@ body {
     @media screen and (max-width: 1025px) {
       .slider-quote span {
         font-size: 20px; } }
+    @media screen and (max-width: 765px) {
+      .slider-quote span {
+        display: none; } }
+
+.profile-cards-mobile {
+  display: none; }
+  @media screen and (max-width: 765px) {
+    .profile-cards-mobile {
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: flex-end;
+      padding: 0 60px; }
+      .profile-cards-mobile .avatar-big-wrapper {
+        position: relative; }
+      .profile-cards-mobile .card-big-avatar {
+        position: absolute;
+        top: -46px;
+        right: 1px; }
+      .profile-cards-mobile .profile-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #CCBA97;
+        transition: 0.3s linear; }
+        .profile-cards-mobile .profile-card:first-child {
+          margin-left: -8px; }
+        .profile-cards-mobile .profile-card:hover {
+          color: #E6E1D8; }
+        .profile-cards-mobile .profile-card .profile-title {
+          font-family: 'Karla';
+          font-size: 10px;
+          line-height: 12px;
+          text-align: center; }
+        .profile-cards-mobile .profile-card.active .profile-circle img {
+          box-shadow: 0px 0px 15px #0BB1C3; }
+        .profile-cards-mobile .profile-card .profile-circle img {
+          border-radius: 50%;
+          transition: 0.3s linear; }
+          .profile-cards-mobile .profile-card .profile-circle img:hover {
+            box-shadow: 0px 0px 15px #0BB1C3; }
+        .profile-cards-mobile .profile-card .profile-progress {
+          margin-top: 8px;
+          position: relative;
+          width: 62px;
+          height: 5px;
+          border: 1px solid #F1BC51; }
+          .profile-cards-mobile .profile-card .profile-progress:after {
+            content: "";
+            background-image: url("../images/timer head_ empty.svg");
+            width: 15px;
+            height: 15px;
+            z-index: 100;
+            position: absolute;
+            bottom: -5px;
+            right: 37%;
+            background-repeat: no-repeat; } }
 
 .profile-cards {
   display: flex;
@@ -1220,6 +1306,9 @@ body {
   justify-content: space-between;
   width: 320px;
   align-items: center; }
+  @media screen and (max-width: 765px) {
+    .profile-cards {
+      display: none; } }
 
 .profile-card {
   display: flex;
