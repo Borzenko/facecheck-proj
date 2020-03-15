@@ -127,9 +127,10 @@ body {
 .mobile-wrapper {
   display: flex;
   align-items: center;
-  justify-self: start;
   width: 100%;
   border-bottom: 1px solid #202529; }
+  .mobile-wrapper:first-child a {
+    margin-left: 20px; }
 
 .nav {
   position: relative;
@@ -430,12 +431,12 @@ body {
   .main-features-learn .last-line:before {
     top: 41px;
     right: -57%; }
-    @media screen and (max-width: 765px) {
-      .main-features-learn .last-line:before {
-        right: unset; } }
     @media screen and (max-width: 1047px) {
       .main-features-learn .last-line:before {
         top: 69px; } }
+    @media screen and (max-width: 765px) {
+      .main-features-learn .last-line:before {
+        right: unset; } }
 
 .main-features {
   margin-bottom: 16px;
@@ -555,26 +556,28 @@ body {
           text-align: left;
           padding-left: 14px;
           line-height: 132%; } }
-    .info-screen-mobile .mobile-text:before {
-      background-image: url("../images/mobile-img/Group 346.svg");
-      left: 8px;
-      top: -35px;
-      content: "";
-      width: 15px;
-      height: 20px;
-      background-repeat: no-repeat;
-      position: absolute;
-      z-index: 1; }
-    .info-screen-mobile .mobile-text:after {
-      content: "";
-      background-image: url("../images/mobile-img/Vector 23.svg");
-      height: 37px;
-      width: 6px;
-      top: -25px;
-      left: 13px;
-      background-repeat: no-repeat;
-      position: absolute;
-      z-index: 1; }
+    @media screen and (max-width: 465px) {
+      .info-screen-mobile .mobile-text:before {
+        background-image: url("../images/mobile-img/Group 346.svg");
+        left: 8px;
+        top: -35px;
+        content: "";
+        width: 15px;
+        height: 20px;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1; } }
+    @media screen and (max-width: 465px) {
+      .info-screen-mobile .mobile-text:after {
+        content: "";
+        background-image: url("../images/mobile-img/Vector 23.svg");
+        height: 37px;
+        width: 6px;
+        top: -25px;
+        left: 13px;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1; } }
     .info-screen-mobile .mobile-text .info-title-m3 {
       padding-right: 38px;
       margin-bottom: 1px; }
@@ -663,8 +666,8 @@ body {
         background-image: url("../images/mobile-img/Vector 23.svg");
         height: 37px;
         width: 6px;
-        top: -18px;
-        left: 13px; } }
+        top: -18px !important;
+        left: 13px !important; } }
   .info-text:before {
     content: "";
     background-image: url("../images/Rectangle.svg");
@@ -681,8 +684,8 @@ body {
     @media screen and (max-width: 465px) {
       .info-text:before {
         background-image: url("../images/mobile-img/Group 346.svg");
-        left: 8px;
-        top: -29px; } }
+        left: 8px !important;
+        top: -29px !important; } }
   .info-text p {
     font-family: 'Karla';
     font-style: normal;
