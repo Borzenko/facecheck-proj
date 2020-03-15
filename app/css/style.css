@@ -990,10 +990,22 @@ body {
   background-position: center, top;
   position: relative;
   background-position-y: -559px; }
+  @media screen and (max-width: 1440px) {
+    .profile-slider {
+      background-position-y: -359px; } }
+  @media screen and (max-width: 1240px) {
+    .profile-slider {
+      background-position-y: -259px; } }
+  @media screen and (max-width: 1040px) {
+    .profile-slider {
+      background-position-y: -159px; } }
   @media screen and (max-width: 765px) {
     .profile-slider {
       padding-top: 0;
-      background: #17181C; } }
+      padding-bottom: 0;
+      background: #17181C url("../images/mobile-img/1-a 1.png") no-repeat;
+      background-position-y: -121px;
+      background-size: cover, contain; } }
   .profile-slider .info-title-m2 {
     padding-left: 4px;
     margin-top: 45px; }
@@ -1030,9 +1042,10 @@ body {
   margin-top: 63px; }
   @media screen and (max-width: 765px) {
     .slider-card {
-      margin: 63px auto;
+      margin: 43px auto;
       width: 90%;
-      height: 79px; } }
+      height: 79px;
+      margin-bottom: 12px; } }
 
 .slider-avatar {
   position: relative;
@@ -1083,6 +1096,10 @@ body {
   flex-direction: column;
   padding-left: 34px;
   padding-top: 9px; }
+  @media screen and (max-width: 765px) {
+    .glacier-quote {
+      padding-top: 0px;
+      padding-left: 29px; } }
   .glacier-quote:after {
     content: "“";
     position: absolute;
@@ -1100,7 +1117,9 @@ body {
     @media screen and (max-width: 765px) {
       .glacier-quote:after {
         font-size: 36px;
-        line-height: 129.39%; } }
+        line-height: 129.39%;
+        top: -11px;
+        left: 16px; } }
   .glacier-quote:before {
     content: "“";
     position: absolute;
@@ -1119,7 +1138,9 @@ body {
     @media screen and (max-width: 765px) {
       .glacier-quote:before {
         font-size: 36px;
-        line-height: 129.39%; } }
+        line-height: 129.39%;
+        bottom: -9px;
+        right: 14px; } }
   .glacier-quote p {
     padding-left: 80px;
     padding-right: 10px;
@@ -1167,6 +1188,13 @@ body {
   flex-direction: column;
   padding-left: 34px;
   padding-top: 9px; }
+  @media screen and (max-width: 765px) {
+    .slider-quote {
+      padding-left: 190px; } }
+  @media screen and (max-width: 665px) {
+    .slider-quote {
+      padding-top: 0px;
+      padding-left: 64px; } }
   .slider-quote:before {
     content: "“";
     position: absolute;
@@ -1185,7 +1213,12 @@ body {
     @media screen and (max-width: 765px) {
       .slider-quote:before {
         font-size: 36px;
-        line-height: 129.39%; } }
+        line-height: 129.39%;
+        right: 208px;
+        bottom: -9px; } }
+    @media screen and (max-width: 465px) {
+      .slider-quote:before {
+        right: 14px; } }
   .slider-quote:after {
     content: "“";
     position: absolute;
@@ -1203,7 +1236,12 @@ body {
     @media screen and (max-width: 765px) {
       .slider-quote:after {
         font-size: 36px;
-        line-height: 129.39%; } }
+        line-height: 129.39%;
+        top: -11px;
+        left: 156px; } }
+    @media screen and (max-width: 665px) {
+      .slider-quote:after {
+        left: 16px; } }
   .slider-quote p {
     padding-left: 80px;
     padding-right: 10px;
@@ -1254,7 +1292,12 @@ body {
       justify-content: space-between;
       width: 100%;
       align-items: flex-end;
-      padding: 0 60px; }
+      padding: 0 140px; } }
+  @media screen and (max-width: 765px) and (max-width: 565px) {
+    .profile-cards-mobile {
+      padding: 0 29px;
+      padding-left: 39px; } }
+  @media screen and (max-width: 765px) {
       .profile-cards-mobile .avatar-big-wrapper {
         position: relative; }
       .profile-cards-mobile .card-big-avatar {
@@ -1284,16 +1327,17 @@ body {
           .profile-cards-mobile .profile-card .profile-circle img:hover {
             box-shadow: 0px 0px 15px #0BB1C3; }
         .profile-cards-mobile .profile-card .profile-progress {
-          margin-top: 8px;
+          margin-top: 3px;
           position: relative;
-          width: 62px;
-          height: 5px;
-          border: 1px solid #F1BC51; }
+          width: 44px;
+          height: 3px;
+          border: 1px solid #F1BC51;
+          margin-bottom: 6px; }
           .profile-cards-mobile .profile-card .profile-progress:after {
             content: "";
-            background-image: url("../images/timer head_ empty.svg");
+            background-image: url("../images/mobile-img/timer head_ empty.svg");
             width: 15px;
-            height: 15px;
+            height: 12px;
             z-index: 100;
             position: absolute;
             bottom: -5px;
