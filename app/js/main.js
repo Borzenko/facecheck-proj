@@ -40,16 +40,22 @@ $(document).ready(function () {
 
   // 
   $('.profile-card').click(function() {
-    $('.profile-card').removeClass('active')
-    $(this).addClass('active')
+    // $('.profile-card').removeClass('active')
+    // $(this).addClass('active')
     carousel.trigger('to.owl.carousel', [$(this).data().slide, 300]);
   })
 
+  carousel.on('changed.owl.carousel', function(event) {
+    $('.profile-card').removeClass('active')
+    console.log($($('.profile-cards-desktop .profile-card')[event.item.index]))
+    $($('.profile-cards-desktop .profile-card')[event.item.index]).addClass('active');
+    $($('.profile-cards-mobile .profile-card')[event.item.index]).addClass('active');
+  })
 });
 
 $('.drop-down-arrow').click(function() {
   $([document.documentElement, document.body]).animate({
-      scrollTop: $(".main_features").offset().top
+      scrollTop: $(".main-features").offset().top
   }, 500);
 });
 

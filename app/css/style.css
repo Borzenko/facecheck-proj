@@ -1338,11 +1338,10 @@ body {
       justify-content: space-between;
       width: 100%;
       align-items: flex-end;
-      padding: 0 140px; } }
+      padding: 120px 140px 0; } }
   @media screen and (max-width: 765px) and (max-width: 565px) {
     .profile-cards-mobile {
-      padding: 0 29px;
-      padding-left: 39px; } }
+      padding: 0 29px 0 32px; } }
   @media screen and (max-width: 765px) {
       .profile-cards-mobile .avatar-big-wrapper {
         position: relative; }
@@ -1356,6 +1355,18 @@ body {
         align-items: center;
         color: #CCBA97;
         transition: 0.3s linear; }
+        .profile-cards-mobile .profile-card .avatar-big-wrapper {
+          display: none; }
+        .profile-cards-mobile .profile-card .avatar-small {
+          display: block; }
+        .profile-cards-mobile .profile-card.active {
+          position: absolute;
+          top: 120px;
+          left: calc(50% - 82px); }
+          .profile-cards-mobile .profile-card.active .avatar-big-wrapper {
+            display: block; }
+          .profile-cards-mobile .profile-card.active .avatar-small {
+            display: none; }
         .profile-cards-mobile .profile-card:first-child {
           margin-left: -8px; }
         .profile-cards-mobile .profile-card:hover {
