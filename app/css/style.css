@@ -534,7 +534,7 @@ body {
         width: 100%;
         margin-top: 0px;
         margin-left: 0; } }
-    @media screen and (max-width: 565px) {
+    @media screen and (max-width: 640px) {
       .info-screen-mobile .mobile-text .info-title-m3 {
         font-size: 18px;
         width: 100%;
@@ -549,17 +549,17 @@ body {
       line-height: 145%;
       color: #F2F2F2;
       padding-right: 66px; }
-      @media screen and (max-width: 565px) {
+      @media screen and (max-width: 640px) {
         .info-screen-mobile .mobile-text p {
           font-size: 16px;
           padding: 0;
           text-align: left;
           padding-left: 12px;
           line-height: 132%; } }
-    @media screen and (max-width: 465px) {
+    @media screen and (max-width: 640px) {
       .info-screen-mobile .mobile-text:before {
         background-image: url("../images/mobile-img/Group 346.svg");
-        left: 8px;
+        left: 130px;
         top: -35px;
         content: "";
         width: 15px;
@@ -567,17 +567,37 @@ body {
         background-repeat: no-repeat;
         position: absolute;
         z-index: 1; } }
+    @media screen and (max-width: 595px) {
+      .info-screen-mobile .mobile-text:before {
+        left: 95px; } }
+    @media screen and (max-width: 525px) {
+      .info-screen-mobile .mobile-text:before {
+        left: 60px; } }
     @media screen and (max-width: 465px) {
+      .info-screen-mobile .mobile-text:before {
+        top: -35px;
+        left: 8px; } }
+    @media screen and (max-width: 640px) {
       .info-screen-mobile .mobile-text:after {
         content: "";
         background-image: url("../images/mobile-img/Vector 23.svg");
         height: 37px;
         width: 6px;
         top: -25px;
-        left: 13px;
+        left: 135px;
         background-repeat: no-repeat;
         position: absolute;
         z-index: 1; } }
+  @media screen and (max-width: 640px) and (max-width: 595px) {
+    .info-screen-mobile .mobile-text:after {
+      left: 100px; } }
+  @media screen and (max-width: 640px) and (max-width: 525px) {
+    .info-screen-mobile .mobile-text:after {
+      left: 65px; } }
+  @media screen and (max-width: 640px) and (max-width: 465px) {
+    .info-screen-mobile .mobile-text:after {
+      top: -25px;
+      left: 13px; } }
     .info-screen-mobile .mobile-text .info-title-m3 {
       padding-right: 38px;
       margin-bottom: 1px; }
@@ -631,7 +651,7 @@ body {
       width: 100%;
       margin-top: 2px;
       margin-left: 0; } }
-  @media screen and (max-width: 565px) {
+  @media screen and (max-width: 640px) {
     .info-text .info-title-m3 {
       font-size: 18px;
       width: 100%;
@@ -658,14 +678,24 @@ body {
     @media screen and (max-width: 765px) {
       .info-text:after {
         display: none; } }
-    @media screen and (max-width: 465px) {
+    @media screen and (max-width: 640px) {
       .info-text:after {
         display: block;
         background-image: url("../images/mobile-img/Vector 23.svg");
         height: 37px;
         width: 6px;
         top: -18px !important;
-        left: 13px !important; } }
+        left: 133px !important; } }
+  @media screen and (max-width: 640px) and (max-width: 595px) {
+    .info-text:after {
+      left: 100px !important; } }
+  @media screen and (max-width: 640px) and (max-width: 525px) {
+    .info-text:after {
+      left: 65px !important; } }
+  @media screen and (max-width: 640px) and (max-width: 465px) {
+    .info-text:after {
+      top: -18px !important;
+      left: 13px !important; } }
   .info-text:before {
     content: "";
     background-image: url("../images/Rectangle.svg");
@@ -679,9 +709,19 @@ body {
     @media screen and (max-width: 855px) {
       .info-text:before {
         top: 82px; } }
-    @media screen and (max-width: 465px) {
+    @media screen and (max-width: 640px) {
       .info-text:before {
         background-image: url("../images/mobile-img/Group 346.svg");
+        left: 128px !important;
+        top: -29px !important; } }
+    @media screen and (max-width: 595px) {
+      .info-text:before {
+        left: 95px !important; } }
+    @media screen and (max-width: 525px) {
+      .info-text:before {
+        left: 60px !important; } }
+    @media screen and (max-width: 465px) {
+      .info-text:before {
         left: 8px !important;
         top: -29px !important; } }
   .info-text p {
@@ -692,7 +732,7 @@ body {
     line-height: 145%;
     color: #F2F2F2;
     padding-right: 66px; }
-    @media screen and (max-width: 565px) {
+    @media screen and (max-width: 640px) {
       .info-text p {
         font-size: 16px;
         padding: 0;

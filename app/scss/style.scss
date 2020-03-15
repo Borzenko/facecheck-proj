@@ -642,7 +642,7 @@ body {
       margin-left: 0;
     }
     .info-title-m3{
-      @media screen and (max-width: 565px) {
+      @media screen and (max-width: 640px) {
       font-size: 18px;
       width: 100%;
       text-align: center;
@@ -659,7 +659,7 @@ body {
     line-height: 145%;
     color: #F2F2F2;
     padding-right: 66px;
-    @media screen and (max-width: 565px) {
+    @media screen and (max-width: 640px) {
       font-size: 16px;
       padding: 0;
       text-align: left;
@@ -668,9 +668,9 @@ body {
       }
   }
     &:before{
-      @media screen and (max-width: 465px) {
+      @media screen and (max-width: 640px) {
       background-image: url('../images/mobile-img/Group 346.svg');
-      left: 8px;
+      left: 130px;
       top: -35px;
       content: "";
       width: 15px;
@@ -679,18 +679,38 @@ body {
       position: absolute;
       z-index: 1;
       }
+      @media screen and (max-width: 595px) {
+        left: 95px;
+      }
+      @media screen and (max-width: 525px) {
+        left: 60px;
+      }
+      @media screen and (max-width: 465px) {
+        top: -35px;
+        left: 8px;
+      }
     }
     &:after{
-      @media screen and (max-width: 465px) {
+      @media screen and (max-width: 640px) {
     content: "";
     background-image: url('../images/mobile-img/Vector 23.svg');
     height: 37px;
     width: 6px;
     top: -25px;
-    left: 13px;
+    left: 135px;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 1;
+    @media screen and (max-width: 595px) {
+      left: 100px;
+    }
+    @media screen and (max-width: 525px) {
+      left: 65px;
+    }
+    @media screen and (max-width: 465px) {
+      top: -25px;
+      left: 13px;
+    }
     }
   }
 
@@ -756,7 +776,7 @@ body {
     margin-left: 0;
   }
   .info-title-m3{
-    @media screen and (max-width: 565px) {
+    @media screen and (max-width: 640px) {
     font-size: 18px;
     width: 100%;
     text-align: center;
@@ -788,13 +808,24 @@ body {
     @media screen and (max-width: 765px) {
       display: none;
     }
-    @media screen and (max-width: 465px) {
+    @media screen and (max-width: 640px) {
       display: block;
       background-image: url('../images/mobile-img/Vector\ 23.svg');
       height: 37px;
       width: 6px;
       top: -18px !important;
-      left: 13px !important;
+      left: 133px !important;
+
+      @media screen and (max-width: 595px) {
+        left: 100px !important;
+      }
+      @media screen and (max-width: 525px) {
+        left: 65px !important;
+      }
+      @media screen and (max-width: 465px) {
+        top: -18px !important;
+        left: 13px !important;
+      }
     }
   }
 
@@ -811,11 +842,22 @@ body {
     @media screen and (max-width: 855px) {
       top: 82px;
     }
-    @media screen and (max-width: 465px) {
+    @media screen and (max-width: 640px) {
       background-image: url('../images/mobile-img/Group\ 346.svg');
+      left: 128px !important;
+      top: -29px !important;
+    }
+    @media screen and (max-width: 595px) {
+      left: 95px !important;
+    }
+    @media screen and (max-width: 525px) {
+      left: 60px !important;
+    }
+    @media screen and (max-width: 465px) {
       left: 8px !important;
       top: -29px !important;
     }
+    
   }
 
   p {
@@ -826,7 +868,7 @@ body {
     line-height: 145%;
     color: #F2F2F2;
     padding-right: 66px;
-    @media screen and (max-width: 565px) {
+    @media screen and (max-width: 640px) {
       font-size: 16px;
       padding: 0;
       text-align: left;
