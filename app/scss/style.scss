@@ -1302,6 +1302,9 @@ body {
     text-transform: uppercase;
     color: rgba(241, 188, 81, 0.5);
     left: 83px;
+    @media screen and (max-width: 1025px) {
+      font-size: 75px;
+    }
   }
   &:before {
     content: "“";
@@ -1315,6 +1318,9 @@ body {
     text-transform: uppercase;
     color: rgba(241, 188, 81, 0.5);
     transform: rotate(180deg);
+    @media screen and (max-width: 1025px) {
+      font-size: 75px;
+    }
   }
 
   p {
@@ -1329,6 +1335,14 @@ body {
     font-size: 40px;
     line-height: 130%;
     color: #C59A43;
+    @media screen and (max-width: 1025px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 925px) {
+      font-size: 28px;
+      padding-left: 0px;
+    }
+
   }
 
   span {
@@ -1342,6 +1356,9 @@ body {
     text-align: right;
     text-transform: capitalize;
     color: #CCBA97;
+    @media screen and (max-width: 1025px) {
+      font-size: 20px;
+    }
   }
 }
 .slider-quote {
@@ -1364,6 +1381,9 @@ body {
     text-transform: uppercase;
     color: rgba(241, 188, 81, 0.5);
     transform: rotate(180deg);
+    @media screen and (max-width: 1025px) {
+      font-size: 75px;
+    }
   }
 
   &:after {
@@ -1377,6 +1397,9 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: rgba(241, 188, 81, 0.5);
+    @media screen and (max-width: 1025px) {
+      font-size: 75px;
+    }
   }
 
   p {
@@ -1391,6 +1414,13 @@ body {
     font-size: 40px;
     line-height: 130%;
     color: #C59A43;
+    @media screen and (max-width: 1025px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 925px) {
+      font-size: 28px;
+      padding-left: 0px;
+    }
   }
 
   span {
@@ -1405,6 +1435,9 @@ body {
     text-align: right;
     text-transform: capitalize;
     color: #CCBA97;
+    @media screen and (max-width: 1025px) {
+      font-size: 20px;
+    }
   }
 }
 

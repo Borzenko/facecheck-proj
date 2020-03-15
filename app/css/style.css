@@ -1084,6 +1084,9 @@ body {
     text-transform: uppercase;
     color: rgba(241, 188, 81, 0.5);
     left: 83px; }
+    @media screen and (max-width: 1025px) {
+      .glacier-quote:after {
+        font-size: 75px; } }
   .glacier-quote:before {
     content: "“";
     position: absolute;
@@ -1096,6 +1099,9 @@ body {
     text-transform: uppercase;
     color: rgba(241, 188, 81, 0.5);
     transform: rotate(180deg); }
+    @media screen and (max-width: 1025px) {
+      .glacier-quote:before {
+        font-size: 75px; } }
   .glacier-quote p {
     padding-left: 80px;
     padding-right: 10px;
@@ -1107,6 +1113,13 @@ body {
     font-size: 40px;
     line-height: 130%;
     color: #C59A43; }
+    @media screen and (max-width: 1025px) {
+      .glacier-quote p {
+        font-size: 30px; } }
+    @media screen and (max-width: 925px) {
+      .glacier-quote p {
+        font-size: 28px;
+        padding-left: 0px; } }
   .glacier-quote span {
     margin-top: 10px;
     display: block;
@@ -1118,6 +1131,9 @@ body {
     text-align: right;
     text-transform: capitalize;
     color: #CCBA97; }
+    @media screen and (max-width: 1025px) {
+      .glacier-quote span {
+        font-size: 20px; } }
 
 .slider-quote {
   width: 100%;
@@ -1138,6 +1154,9 @@ body {
     text-transform: uppercase;
     color: rgba(241, 188, 81, 0.5);
     transform: rotate(180deg); }
+    @media screen and (max-width: 1025px) {
+      .slider-quote:before {
+        font-size: 75px; } }
   .slider-quote:after {
     content: "“";
     position: absolute;
@@ -1149,6 +1168,9 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: rgba(241, 188, 81, 0.5); }
+    @media screen and (max-width: 1025px) {
+      .slider-quote:after {
+        font-size: 75px; } }
   .slider-quote p {
     padding-left: 80px;
     padding-right: 10px;
@@ -1160,6 +1182,13 @@ body {
     font-size: 40px;
     line-height: 130%;
     color: #C59A43; }
+    @media screen and (max-width: 1025px) {
+      .slider-quote p {
+        font-size: 30px; } }
+    @media screen and (max-width: 925px) {
+      .slider-quote p {
+        font-size: 28px;
+        padding-left: 0px; } }
   .slider-quote span {
     margin-top: 10px;
     display: block;
@@ -1172,6 +1201,9 @@ body {
     text-align: right;
     text-transform: capitalize;
     color: #CCBA97; }
+    @media screen and (max-width: 1025px) {
+      .slider-quote span {
+        font-size: 20px; } }
 
 .profile-cards {
   display: flex;
