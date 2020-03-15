@@ -447,8 +447,9 @@ body {
   box-shadow: 1px 33px 46px 45px #17181C; }
   @media screen and (max-width: 765px) {
     .main-features {
-      background-image: url("../images/mobile-img/swamp.png");
+      background-image: url("../images/mobile-img/feature 2 bg.png");
       background-size: cover;
+      background-position-y: -100px;
       padding-bottom: 22px; } }
   @media screen and (max-width: 765px) {
     .main-features .intro-inner {
