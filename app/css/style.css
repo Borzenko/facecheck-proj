@@ -124,7 +124,7 @@ body {
   background-color: #202529;
   border-bottom: 1px solid #C59A43;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6); }
-  @media screen and (max-width: 765px) {
+  @media screen and (max-width: 795px) {
     .header {
       border-bottom: none;
       padding-bottom: 11px; } }
@@ -800,13 +800,32 @@ body {
       right: -74%;
       left: unset;
       z-index: 1; }
+      @media screen and (max-width: 1210px) {
+        .reverse .info-text:after {
+          right: -76%; } }
+      @media screen and (max-width: 1150px) {
+        .reverse .info-text:after {
+          right: -77%; } }
+      @media screen and (max-width: 1110px) {
+        .reverse .info-text:after {
+          right: -78%; } }
       @media screen and (max-width: 1059px) {
         .reverse .info-text:after {
           bottom: 157px;
-          top: unset; } }
+          top: unset;
+          right: -73%; } }
+      @media screen and (max-width: 990px) {
+        .reverse .info-text:after {
+          right: -75%; } }
       @media screen and (max-width: 972px) {
         .reverse .info-text:after {
           bottom: 181px; } }
+      @media screen and (max-width: 850px) {
+        .reverse .info-text:after {
+          right: -78%; } }
+      @media screen and (max-width: 812px) {
+        .reverse .info-text:after {
+          bottom: 204px; } }
     .reverse .info-text:before {
       content: "";
       background-image: url("../images/Rectangle.svg");
@@ -827,6 +846,10 @@ body {
         .reverse .info-text:before {
           right: -49%;
           bottom: 172px; } }
+      @media screen and (max-width: 812px) {
+        .reverse .info-text:before {
+          right: -47%;
+          bottom: 195px; } }
     .reverse .info-text p {
       padding-right: 0; }
 
