@@ -67,3 +67,7 @@ var countCharacters = function(e) {
   countRemaining.textContent = counter;
 }
 
+AOS.init({
+  duration: 3200
+ });
+

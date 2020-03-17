@@ -806,11 +806,10 @@ body {
     }
   }
 
-
   &:after {
     content: "";
     background-image: url('../images/tag.svg');
-    width: 590px;
+    // width: 590px;
     height: 20px;
     background-repeat: no-repeat;
     position: absolute;
@@ -942,13 +941,13 @@ body {
     &:after {
       content: "";
       background-image: url('../images/Line2.svg');
-      width: 710px;
       height: 20px;
       background-repeat: no-repeat;
       position: absolute;
       bottom: 139px;
-      right: -74%;
+      right: -53%;
       left: unset;
+      background-position: right;
       z-index: 1;
       @media screen and (max-width: 1210px) {
       right: -76%;
@@ -1978,5 +1977,41 @@ body {
   &:hover {
     background: #0BB1C3;
     color: #043E4C;
+  }
+}
+
+[data-aos="line-1-anim"] {
+  &:after {
+    transition: all 2s;
+    width: 0
+  }
+  &.aos-animate {
+    &:after {
+      width: 590px
+    }
+  }
+}
+
+[data-aos="line-2-anim"] {
+  &:after {
+    transition: all 2s;
+    width: 0
+  }
+  &.aos-animate {
+    &:after {
+      width: 624px;
+    }
+  }
+}
+
+[data-aos="line-3-anim"] {
+  &:after {
+    transition: all 2s;
+    width: 0
+  }
+  &.aos-animate {
+    &:after {
+      width: 590px
+    }
   }
 }
