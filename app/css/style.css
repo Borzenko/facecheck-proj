@@ -1121,19 +1121,58 @@ body {
       z-index: 2; } }
 
 .slider-card {
+  position: relative;
   display: flex;
   align-items: center;
   background: #202529;
   width: 100%;
   height: 252px;
   border: 1px solid #C59A43;
-  margin-top: 63px; }
+  margin-top: 63px;
+  border-radius: 0 40px 0 35px; }
+  @media screen and (max-width: 1440px) {
+    .slider-card {
+      border-radius: 0 47px; } }
   @media screen and (max-width: 765px) {
     .slider-card {
       margin: 43px auto;
       width: 90%;
       height: 79px;
       margin-bottom: 12px; } }
+  .slider-card:after {
+    content: "";
+    background-image: url(../images/Testamonials-top.svg);
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    width: 59px;
+    height: 59px;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 1800px) {
+      .slider-card:after {
+        top: -4px; } }
+    @media screen and (max-width: 1640px) {
+      .slider-card:after {
+        right: -4px; } }
+    @media screen and (max-width: 1440px) {
+      .slider-card:after {
+        top: -4px;
+        right: -5px; } }
+  .slider-card:before {
+    content: "";
+    background-image: url(../images/Testamonials-bot.svg);
+    position: absolute;
+    bottom: -6px;
+    left: -4px;
+    width: 59px;
+    height: 59px;
+    background-repeat: no-repeat;
+    /*     @media screen and (max-width: 765px) {
+      background-image: url(../images/frame-bot.svg);
+    } */ }
+
+.owl-item {
+  padding: 0 1px 3px 2px; }
 
 .slider-avatar {
   position: relative;
@@ -1183,7 +1222,8 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 34px;
-  padding-top: 9px; }
+  padding-top: 9px;
+  z-index: 1; }
   @media screen and (max-width: 765px) {
     .glacier-quote {
       padding-top: 0px;
@@ -1275,14 +1315,15 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 34px;
-  padding-top: 9px; }
+  padding-top: 9px;
+  z-index: 1; }
   @media screen and (max-width: 765px) {
     .slider-quote {
       padding-left: 190px; } }
   @media screen and (max-width: 665px) {
     .slider-quote {
       padding-top: 0px;
-      padding-left: 64px; } }
+      padding-left: 48px; } }
   .slider-quote:before {
     content: "“";
     position: absolute;
