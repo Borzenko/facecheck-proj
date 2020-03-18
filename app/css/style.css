@@ -1701,6 +1701,9 @@ body {
   @media screen and (max-width: 1050px) {
     [data-aos="line-1-anim"].aos-animate:after {
       width: 510px; } }
+  @media screen and (max-width: 765px) {
+    [data-aos="line-1-anim"].aos-animate:after {
+      width: 50px; } }
 
 [data-aos="line-2-anim"]:after {
   transition: all 2s;
@@ -1711,6 +1714,9 @@ body {
   @media screen and (max-width: 1050px) {
     [data-aos="line-2-anim"].aos-animate:after {
       width: 510px; } }
+  @media screen and (max-width: 765px) {
+    [data-aos="line-2-anim"].aos-animate:after {
+      width: 50px; } }
 
 [data-aos="line-3-anim"]:after {
   transition: all 2s;
@@ -1721,3 +1727,6 @@ body {
   @media screen and (max-width: 1050px) {
     [data-aos="line-3-anim"].aos-animate:after {
       width: 510px; } }
+  @media screen and (max-width: 765px) {
+    [data-aos="line-3-anim"].aos-animate:after {
+      width: 50px; } }
