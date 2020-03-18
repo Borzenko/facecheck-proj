@@ -39,7 +39,9 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 1000,
     autoplayTimeout: 5000,
-    loop: true
+    loop: true,
+    touchDrag:false,
+    mouseDrag: false
   });
 
   $('.profile-card[data-slide="0"').addClass('active')
@@ -52,11 +54,23 @@ $(document).ready(function () {
   })
 });
 
-$('.drop-down-arrow').click(function() {
+$('.drop-down-arrow',).click(function() {
   $([document.documentElement, document.body]).animate({
       scrollTop: $(".main-features").offset().top
   }, 500);
 });
+$('#features-scroll',).click(function() {
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $(".main-features").offset().top
+  }, 500);
+});
+$('#home-scroll',).click(function() {
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $(".download-desktop-app").offset().top
+  }, 500);
+});
+
+
 
 var countCharacters = function(e) {
   var textEntered, countRemaining, counter;
