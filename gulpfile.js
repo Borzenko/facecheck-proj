@@ -4,7 +4,7 @@ var browserSync = require('browser-sync').create();
 
 
 gulp.task('sass', function() {
- return gulp.src('app/scss/**/*.scss') // Получаем все файлы, оканчивающиеся на .scss, из app/scss и дочерних папок
+ return gulp.src('app/scss/**/*.scss')
    .pipe(sass())
    .pipe(gulp.dest('app/css'))
    .pipe(browserSync.reload({
@@ -15,14 +15,12 @@ gulp.task('sass', function() {
 gulp.task('browserSync', function() {
  browserSync.init({
   server: {
-   baseDir: 'app'
+   baseDir: './'
   },
  })
 })
 
 gulp.task('watch', gulp.parallel('browserSync', function(){
  gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
- // Перезагрузка браузера при изменении файлов HTML или JS
- gulp.watch("*.html").on('change', browserSync.reload);
-
+ gulp.watch('index.html').on('change', browserSync.reload);
 }))
