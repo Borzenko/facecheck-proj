@@ -1313,9 +1313,9 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-left: 34px;
   padding-top: 9px;
-  z-index: 1; }
+  z-index: 1;
+  padding-right: 11%; }
   @media screen and (max-width: 765px) {
     .slider-quote {
       padding-left: 190px; } }
@@ -1323,56 +1323,9 @@ body {
     .slider-quote {
       padding-top: 0px;
       padding-left: 48px; } }
-  .slider-quote:before {
-    content: "“";
-    position: absolute;
-    bottom: 11px;
-    right: 137px;
-    font-family: 'Marcellus';
-    font-size: 96px;
-    line-height: 129.39%;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgba(241, 188, 81, 0.5);
-    transform: rotate(180deg); }
-    @media screen and (max-width: 1025px) {
-      .slider-quote:before {
-        font-size: 75px; } }
-    @media screen and (max-width: 765px) {
-      .slider-quote:before {
-        font-size: 36px;
-        line-height: 129.39%;
-        right: 208px;
-        bottom: -9px; } }
-    @media screen and (max-width: 465px) {
-      .slider-quote:before {
-        right: 14px; } }
-  .slider-quote:after {
-    content: "“";
-    position: absolute;
-    top: -30px;
-    left: 0px;
-    font-family: 'Marcellus';
-    font-size: 96px;
-    line-height: 129.39%;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgba(241, 188, 81, 0.5); }
-    @media screen and (max-width: 1025px) {
-      .slider-quote:after {
-        font-size: 75px; } }
-    @media screen and (max-width: 765px) {
-      .slider-quote:after {
-        font-size: 36px;
-        line-height: 129.39%;
-        top: -11px;
-        left: 156px; } }
-    @media screen and (max-width: 665px) {
-      .slider-quote:after {
-        left: 16px; } }
   .slider-quote p {
-    padding-left: 80px;
     padding-right: 10px;
+    position: relative;
     max-width: 780px;
     margin: 0;
     font-family: 'Marcellus';
@@ -1380,7 +1333,8 @@ body {
     font-weight: normal;
     font-size: 40px;
     line-height: 130%;
-    color: #C59A43; }
+    color: #C59A43;
+    text-align: center; }
     @media screen and (max-width: 1025px) {
       .slider-quote p {
         font-size: 30px; } }
@@ -1392,11 +1346,56 @@ body {
       .slider-quote p {
         font-size: 18px;
         line-height: 130%; } }
+    .slider-quote p:before {
+      content: "“";
+      position: absolute;
+      bottom: -36px;
+      right: 0px;
+      font-family: 'Marcellus';
+      font-size: 96px;
+      line-height: 129.39%;
+      text-align: center;
+      text-transform: uppercase;
+      color: rgba(241, 188, 81, 0.5);
+      transform: rotate(180deg); }
+      @media screen and (max-width: 1025px) {
+        .slider-quote p:before {
+          font-size: 75px; } }
+      @media screen and (max-width: 765px) {
+        .slider-quote p:before {
+          font-size: 36px;
+          line-height: 129.39%;
+          right: 208px;
+          bottom: -9px; } }
+      @media screen and (max-width: 465px) {
+        .slider-quote p:before {
+          right: 14px; } }
+    .slider-quote p:after {
+      content: "“";
+      position: absolute;
+      top: -39px;
+      left: 0px;
+      font-family: 'Marcellus';
+      font-size: 96px;
+      line-height: 129.39%;
+      text-align: center;
+      text-transform: uppercase;
+      color: rgba(241, 188, 81, 0.5); }
+      @media screen and (max-width: 1025px) {
+        .slider-quote p:after {
+          font-size: 75px; } }
+      @media screen and (max-width: 765px) {
+        .slider-quote p:after {
+          font-size: 36px;
+          line-height: 129.39%;
+          top: -11px;
+          left: 156px; } }
+      @media screen and (max-width: 665px) {
+        .slider-quote p:after {
+          left: 16px; } }
   .slider-quote span {
-    margin-top: 10px;
+    margin-top: 18px;
     display: block;
-    padding-right: 137px;
-    padding-left: 10px;
     font-family: 'Marcellus';
     font-size: 30px;
     line-height: 38px;
@@ -1464,13 +1463,24 @@ body {
           transition: 0.3s linear; }
           .profile-cards-mobile .profile-card .profile-circle img:hover {
             box-shadow: 0px 0px 15px #0BB1C3; }
+        .profile-cards-mobile .profile-card.active .profile-progress:before {
+          width: 100%;
+          transition: all 5s linear; }
         .profile-cards-mobile .profile-card .profile-progress {
           margin-top: 3px;
           position: relative;
           width: 44px;
-          height: 3px;
+          height: 5px;
           border: 1px solid #F1BC51;
-          margin-bottom: 6px; } }
+          margin-bottom: 6px; }
+          .profile-cards-mobile .profile-card .profile-progress:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 0px;
+            height: 100%;
+            background: orange; } }
 
 .profile-cards {
   display: flex;
@@ -1504,12 +1514,24 @@ body {
     transition: 0.3s linear; }
     .profile-card .profile-circle img:hover {
       box-shadow: 0px 0px 15px #0BB1C3; }
+  .profile-card.active .profile-progress:before {
+    width: 100%;
+    transition: all 5s linear; }
   .profile-card .profile-progress {
     margin-top: 8px;
     position: relative;
     width: 62px;
     height: 5px;
     border: 1px solid #F1BC51; }
+    .profile-card .profile-progress:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0px;
+      height: 100%;
+      background: orange;
+      z-index: 0; }
 
 .tree-1 {
   position: absolute;

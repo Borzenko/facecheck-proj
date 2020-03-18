@@ -36,20 +36,19 @@ $(document).ready(function () {
     slideSpeed: 300,
     paginationSpeed: 400,
     items: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    autoplayTimeout: 5000,
+    loop: true
   });
 
-  // 
-  $('.profile-card').click(function() {
-    // $('.profile-card').removeClass('active')
-    // $(this).addClass('active')
-    carousel.trigger('to.owl.carousel', [$(this).data().slide, 300]);
-  })
+  $('.profile-card[data-slide="0"').addClass('active')
 
   carousel.on('changed.owl.carousel', function(event) {
     $('.profile-card').removeClass('active')
-    console.log($($('.profile-cards-desktop .profile-card')[event.item.index]))
-    $($('.profile-cards-desktop .profile-card')[event.item.index]).addClass('active');
-    $($('.profile-cards-mobile .profile-card')[event.item.index]).addClass('active');
+    console.log($($('.profile-cards-desktop .profile-card')[event.page.index]))
+    $($('.profile-cards-desktop .profile-card')[event.page.index]).addClass('active');
+    $($('.profile-cards-mobile .profile-card')[event.page.index]).addClass('active');
   })
 });
 
