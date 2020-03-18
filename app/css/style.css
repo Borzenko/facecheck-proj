@@ -1470,17 +1470,7 @@ body {
           width: 44px;
           height: 3px;
           border: 1px solid #F1BC51;
-          margin-bottom: 6px; }
-          .profile-cards-mobile .profile-card .profile-progress:after {
-            content: "";
-            background-image: url("../images/mobile-img/timer head_ empty.svg");
-            width: 15px;
-            height: 12px;
-            z-index: 100;
-            position: absolute;
-            bottom: -5px;
-            right: 37%;
-            background-repeat: no-repeat; } }
+          margin-bottom: 6px; } }
 
 .profile-cards {
   display: flex;
@@ -1520,16 +1510,6 @@ body {
     width: 62px;
     height: 5px;
     border: 1px solid #F1BC51; }
-    .profile-card .profile-progress:after {
-      content: "";
-      background-image: url("../images/timer head_ empty.svg");
-      width: 15px;
-      height: 15px;
-      z-index: 100;
-      position: absolute;
-      bottom: -5px;
-      right: 37%;
-      background-repeat: no-repeat; }
 
 .tree-1 {
   position: absolute;
