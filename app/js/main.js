@@ -61,7 +61,15 @@ $(document).ready(function () {
   });
 
   $('.profile-card[data-slide="0"').addClass('active')
+  
+  $('.profile-card').click(function() {
+    $('.profile-card').removeClass('active')
+    $(this).addClass('active')
 
+/*     carousel.trigger('carousel.autoplay',[5000]) */
+
+    carousel.trigger('to.owl.carousel', [$(this).data().slide, 300]);
+  })
   carousel.on('changed.owl.carousel', function(event) {
     $('.profile-card').removeClass('active')
     console.log($($('.profile-cards-desktop .profile-card')[event.page.index]))
