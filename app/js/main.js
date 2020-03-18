@@ -27,6 +27,22 @@ $(document).ready(function () {
     $("#nav-mobile").toggleClass("active");
   });
 
+  $("#mobile-features").on("click", function (event) {
+    event.preventDefault();
+    $("#nav-mobile").toggleClass("active");
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $(".main-features").offset().top -15
+  }, 500);
+  });
+
+  $("#mobile-home").on("click", function (event) {
+    event.preventDefault();
+    $("#nav-mobile").toggleClass("active");
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $(".download-desktop-app").offset().top
+  }, 500);
+  });
+
   var el = document.getElementById('desc');
   el.addEventListener('keydown', countCharacters, false);
 

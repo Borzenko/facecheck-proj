@@ -79,7 +79,6 @@ body {
 
 .header_logo {
   @media screen and (max-width: 765px) {
-    margin-top: -5px;
     margin-left: 9px;
   }
   a{
@@ -308,7 +307,7 @@ body {
 .nav-toggle {
   display: none;
   position: absolute;
-  top: 0px;
+  top: 6px;
   left: 18px;
   font-size: 0;
   color: transparent;
@@ -595,7 +594,7 @@ body {
   position: relative;
   z-index: 2;
   padding-bottom: 79px;
-  box-shadow: 1px 33px 46px 45px #17181C;
+  box-shadow: 1px 64px 46px 45px #17181C;
 
   @media screen and (max-width: 765px) {
     background-image: url('../images/mobile-img/feature\ 2\ bg.png');
@@ -2187,6 +2186,7 @@ body {
 .submit-modal {
   display: block;
   width: 81px;
+  border: none;
   text-decoration: none;
   padding: 6px 6px;
   background: #043E4C;

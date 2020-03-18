@@ -24,10 +24,10 @@
       <div class="header_inner">
         <div class="header_logo" data-scroll="#intro">
           <a href="/">
-          <img class="logo_image desktop-content" src="images/facecheck_mark_small.png" alt="logo">
-          <img class="desktop-content" src="images/facecheck_logotype.svg" alt="logo_name">
-          <img class="logo_image mobile-content" src="images/mobile-img/facecheck_mark_small.svg" alt="logo">
-          <img class="mobile-content" src="images/mobile-img/facecheck_logotype(1).svg" alt="logo_name">
+          <img class="logo_image desktop-content" src="app/images/facecheck_mark_small.png" alt="logo">
+          <img class="desktop-content" src="app/images/facecheck_logotype.svg" alt="logo_name">
+          <img class="logo_image mobile-content" src="app/images/mobile-img/facecheck_mark_small.svg" alt="logo">
+          <img class="mobile-content" src="app/images/mobile-img/facecheck_logotype(1).svg" alt="logo_name">
           </a>
         </div>
         <nav class="nav">
@@ -42,11 +42,11 @@
           <div class="mobile-inner">
             <div class="mobile-wrapper">
               <img style="padding-left:7px;" src="app/images/mobile-img/Union.svg" alt="">
-              <a href="#nowhere" class="nav_link"> Home</a>
+              <a href="#nowhere" id="mobile-home" class="nav_link"> Home</a>
             </div>
             <div class="mobile-wrapper">
               <img src="app/images/mobile-img/Union1.svg" alt="">
-              <a href="#nowhere" class="nav_link">Features</a>
+              <a href="#nowhere" id="mobile-features" class="nav_link">Features</a>
             </div>
             <div class="mobile-wrapper">
               <img src="app/images/mobile-img/discord-icon.svg" alt="">
@@ -73,22 +73,23 @@
       <a href="#close-modal" rel="modal:close" class="close_modal"></a>
     </div>
     <div class="form-inner">
-      <form class="modal-form">
+      <form class="modal-form" action="sendmail.php" method="POST">
         <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Your name" autocomplete="off">
+        <input id="name" name="name" type="text" placeholder="Your name" autocomplete="off" required>
         <label for="email">Email Adress</label>
-        <input id="email" type="text" placeholder="you@mail.com" autocomplete="off">
+        <input id="email" name="email" type="text" placeholder="you@mail.com" autocomplete="off" required>
         <label for="subject">Subject</label>
-        <input id="subject" type="text" placeholder="What can we help you with?" autocomplete="off">
+        <input id="subject" name="subject" type="text" placeholder="What can we help you with?" autocomplete="off" required>
         <label for="desc">Description</label>
-        <textarea maxlength="450" id="desc" cols="30" rows="7" autocomplete="off" placeholder="Let us know your thoughts about the app, ask for assistance or make suggestions here. 
+        <textarea name="description" maxlength="450" id="desc" cols="30" rows="7" autocomplete="off" placeholder="Let us know your thoughts about the app, ask for assistance or make suggestions here. 
 Thank you for sharing!"></textarea>
         <div style="position: relative; width: 100%;">
           <div id="charactersRemaining">450</div>
           <span class="characters-left">characters left</span>
         </div>
+
+        <button type="submit" class="submit-modal">Submit</button>
       </form>
-      <a href="#" class="submit-modal">Submit</a>
     </div>
 
   </div>
