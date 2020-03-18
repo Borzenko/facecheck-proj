@@ -69,6 +69,9 @@ body {
     margin-top: -5px;
     margin-left: 9px; } }
 
+.header_logo a {
+  text-decoration: none; }
+
 .header-half-block {
   display: block;
   margin-bottom: 13px;
@@ -175,7 +178,10 @@ body {
     font-size: 16px;
     line-height: 19px;
     text-decoration: none;
-    transition: color .5s linear; }
+    transition: 0.5s linear; }
+    @media screen and (max-width: 805px) {
+      .nav .nav_link {
+        font-size: 14px; } }
     @media screen and (max-width: 795px) {
       .nav .nav_link {
         padding: 15px 5px;
@@ -192,7 +198,7 @@ body {
       top: 100%;
       left: 0;
       z-index: 1;
-      transition: opacity .5s linear; }
+      transition: opacity 0.4s linear; }
       @media screen and (max-width: 795px) {
         .nav .nav_link:after {
           display: none; } }
@@ -234,7 +240,10 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 144%;
-  transition: 1s linear; }
+  transition: 0.4s linear; }
+  @media screen and (max-width: 805px) {
+    .download_now {
+      font-size: 14px; } }
   .download_now:hover {
     background: #FFBB32; }
 
@@ -308,6 +317,7 @@ body {
   position: relative;
   padding-top: 109px;
   background-image: url("../images/Rectangle 21.png");
+  background-size: cover;
   width: 100%;
   height: 942px;
   background-repeat: no-repeat; }
@@ -761,6 +771,7 @@ body {
 .ingame-tags {
   position: relative;
   background-image: url("../images/swamp.png");
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 14px;
   padding-bottom: 142px; }
@@ -962,12 +973,14 @@ body {
 
 .card-wrapper {
   display: flex;
-  width: calc(25% - 20px);
+  width: calc(25% - 16px);
   background: #1D1E22;
   padding: 4px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
   border-radius: 3px;
   border: 2px solid #202529; }
+  .card-wrapper:first-child {
+    margin-right: 10px; }
   @media screen and (max-width: 950px) {
     .card-wrapper {
       width: calc(50% - 10px);
@@ -1614,10 +1627,13 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     color: #CCBA97;
-    opacity: 0.4;
     font-family: 'Karla';
     font-size: 16px;
     line-height: 19px; }
+  .modal-form input::placeholder {
+    opacity: 0.4; }
+  .modal-form textarea::placeholder {
+    opacity: 0.4; }
   .modal-form textarea {
     resize: none; }
 
@@ -1659,7 +1675,7 @@ body {
   display: block;
   width: 81px;
   text-decoration: none;
-  padding: 7px 6px;
+  padding: 6px 6px;
   background: #043E4C;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
   border-radius: 1px;
@@ -1670,7 +1686,8 @@ body {
   text-align: center;
   margin: 0 auto;
   color: #0BB1C3;
-  transition: 0.3s linear; }
+  transition: 0.3s linear;
+  margin-top: 32px; }
   .submit-modal:hover {
     background: #0BB1C3;
     color: #043E4C; }

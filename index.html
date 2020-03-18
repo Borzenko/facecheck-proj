@@ -23,10 +23,12 @@
       <div class="header-half-block"></div>
       <div class="header_inner">
         <div class="header_logo" data-scroll="#intro">
-          <img class="logo_image desktop-content" src="app/images/facecheck_mark_small.png" alt="logo">
-          <img class="desktop-content" src="app/images/facecheck_logotype.svg" alt="logo_name">
-          <img class="logo_image mobile-content" src="app/images/mobile-img/facecheck_mark_small.svg" alt="logo">
-          <img class="mobile-content" src="app/images/mobile-img/facecheck_logotype(1).svg" alt="logo_name">
+          <a href="/">
+          <img class="logo_image desktop-content" src="images/facecheck_mark_small.png" alt="logo">
+          <img class="desktop-content" src="images/facecheck_logotype.svg" alt="logo_name">
+          <img class="logo_image mobile-content" src="images/mobile-img/facecheck_mark_small.svg" alt="logo">
+          <img class="mobile-content" src="images/mobile-img/facecheck_logotype(1).svg" alt="logo_name">
+          </a>
         </div>
         <nav class="nav">
           <a href="#nowhere" id="home-scroll" class="nav_link">Home</a>
@@ -65,7 +67,7 @@
     </div>
   </header>
   <div id="modal-contact" class="modal" style="padding:15px 0 !important">
-    <div style="border-bottom:2px solid #2A3036;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);">
+    <div style="border-bottom:1px solid #2A3036;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);">
       <h3 class="info-title-m2 ta-c" style="margin:0;margin-bottom:10px;text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);font-size: 20px;
    line-height: 25px;">Contact Us</h3>
       <a href="#close-modal" rel="modal:close" class="close_modal"></a>
@@ -73,13 +75,13 @@
     <div class="form-inner">
       <form class="modal-form">
         <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Your name">
+        <input id="name" type="text" placeholder="Your name" autocomplete="off">
         <label for="email">Email Adress</label>
-        <input id="email" type="text" placeholder="you@mail.com">
+        <input id="email" type="text" placeholder="you@mail.com" autocomplete="off">
         <label for="subject">Subject</label>
-        <input id="subject" type="text" placeholder="What can we help you with?">
+        <input id="subject" type="text" placeholder="What can we help you with?" autocomplete="off">
         <label for="desc">Description</label>
-        <textarea maxlength="450" id="desc" cols="30" rows="7" placeholder="Let us know your thoughts about the app, ask for assistance or make suggestions here. 
+        <textarea maxlength="450" id="desc" cols="30" rows="7" autocomplete="off" placeholder="Let us know your thoughts about the app, ask for assistance or make suggestions here. 
 Thank you for sharing!"></textarea>
         <div style="position: relative; width: 100%;">
           <div id="charactersRemaining">450</div>
