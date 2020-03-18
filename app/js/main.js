@@ -44,7 +44,7 @@ $(document).ready(function () {
   });
 
   var el = document.getElementById('desc');
-  el.addEventListener('keydown', countCharacters, false);
+  el.addEventListener('keyup', countCharacters);
 
 
   var carousel = $("#owl-demo").owlCarousel({
@@ -96,12 +96,12 @@ $('#home-scroll',).click(function() {
 
 
 
-var countCharacters = function(e) {
+var countCharacters = function() {
   var textEntered, countRemaining, counter;
   textEntered = document.getElementById('desc').value;
   counter = (450 - (textEntered.length));
   countRemaining = document.getElementById('charactersRemaining');
-  countRemaining.textContent = counter;
+  countRemaining.innerText= counter;
 }
 
 AOS.init({
