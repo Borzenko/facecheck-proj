@@ -23,6 +23,6 @@ gulp.task('browserSync', function() {
 gulp.task('watch', gulp.parallel('browserSync', function(){
  gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
  // Перезагрузка браузера при изменении файлов HTML или JS
- gulp.watch("app/*.html").on('change', browserSync.reload);
+ gulp.watch("*.html").on('change', browserSync.reload);
 
 }))
