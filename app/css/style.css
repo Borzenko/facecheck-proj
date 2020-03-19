@@ -177,7 +177,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     text-decoration: none;
-    transition: 0.5s linear; }
+    transition: 0.5s color linear; }
     @media screen and (max-width: 805px) {
       .nav .nav_link {
         font-size: 14px; } }
@@ -410,7 +410,7 @@ body {
   color: #0D0A1A;
   background: #F1BC51;
   text-decoration: none;
-  transition: 0.5s linear; }
+  transition: 0.2s; }
   .button:hover {
     background: #FFBB32; }
 
@@ -972,18 +972,25 @@ body {
 
 .card-wrapper {
   display: flex;
-  width: calc(25% - 16px);
+  width: calc(25% - 17px);
   background: #1D1E22;
   padding: 4px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
   border-radius: 3px;
-  border: 2px solid #202529; }
-  .card-wrapper:first-child {
-    margin-right: 10px; }
+  border: 2px solid #202529;
+  margin-right: 26px; }
+  .card-wrapper:nth-child(2) {
+    margin-right: 16px; }
+  .card-wrapper:last-child {
+    margin-right: 0px; }
   @media screen and (max-width: 950px) {
     .card-wrapper {
+      display: flex;
       width: calc(50% - 10px);
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      margin-right: 0; }
+      .card-wrapper:nth-child(2) {
+        margin-right: 0px; } }
   @media screen and (max-width: 650px) {
     .card-wrapper {
       width: calc(50% - 6px);
@@ -1594,7 +1601,7 @@ body {
     z-index: 100;
     position: absolute;
     bottom: -14px;
-    right: 45%;
+    left: calc(50% - 29px);
     background-repeat: no-repeat; }
     @media screen and (max-width: 500px) {
       .modal:after {
@@ -1730,3 +1737,11 @@ body {
   @media screen and (max-width: 765px) {
     [data-aos="line-3-anim"].aos-animate:after {
       width: 50px; } }
+
+body::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 50%; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #DEAD4B;
+  outline: 1px solid #DEAD4B; }
