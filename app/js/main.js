@@ -101,6 +101,57 @@ $(document).ready(function () {
     duration: 3200
   });
   
+/*   var form = document.querySelector('.modal-form')
+  var validateBtn = form.querySelector('.submit-modal')
+  var name = form.querySelector('#name')
+  var email = form.querySelector('#email')
+  var subject = form.querySelector('#subject')
+  var message = form.querySelector('.description')
+  var fields = form.querySelectorAll('.field') */
+
+  $('.modal-form').submit(function(e) {
+    e.preventDefault();
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var subject = $('#subject').val();
+    var message = $('.description').val();
+    var fields = $('.field');
+    $("input").removeClass('error');
+    $("textarea").removeClass('error')
+ 
+    if (name.length< 1) {
+      $('#name').addClass('error');
+    }
+    if (subject.length< 1) {
+      $('#subject').addClass('error');
+    }
+    if (message.length< 1) {
+      $('.description').addClass('error');
+    }
+    if (email.length< 1) {
+      $('#email').addClass('error');
+    } else if(IsEmail(email)==false){ 
+        $('#email').addClass('error');
+    }
+    console.log(fields)
+      if ($(fields).hasClass('error')) {
+        $('span.accepted').remove();
+        $('span.error-text').remove();
+        $('.submit-modal').before('<span class="error-text">Make sure all fields are correct</span>');
+      }else{
+        $('span.error-text').remove();
+        $('span.accepted').remove();
+        $('.submit-modal').before('<span class="accepted">Message sent - thank you!</span>');
+      }
+  });
+  function IsEmail(email) {
+    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(!regex.test(email)) {
+      return false;
+    }else{
+      return true;
+    }
+  }
 });  
 
 

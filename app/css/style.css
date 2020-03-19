@@ -448,7 +448,7 @@ body {
         padding-right: 0; } }
   .main-features-learn .last-line h4 {
     padding-right: 37px;
-    margin-bottom: 2px; }
+    margin-bottom: 10px; }
   .main-features-learn .last-line:after {
     top: 32px;
     right: -75%; }
@@ -1708,6 +1708,26 @@ body {
   line-height: 21px;
   color: #917444;
   margin-bottom: 5px; }
+
+.error {
+  border: 1px solid #EB5757 !important; }
+
+.error-text {
+  position: absolute;
+  bottom: 67px;
+  left: 165px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #EB5757; }
+
+.accepted {
+  position: absolute;
+  bottom: 67px;
+  left: 176px;
+  font-family: 'Karla';
+  font-size: 12px;
+  line-height: 14px;
+  color: #27AE60; }
 
 .submit-modal {
   display: block;

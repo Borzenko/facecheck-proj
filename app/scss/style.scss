@@ -557,7 +557,7 @@ body {
 
     h4 {
       padding-right: 37px;
-      margin-bottom: 2px;
+      margin-bottom: 10px;
 
     }
 
@@ -2217,7 +2217,26 @@ body {
   color: #917444;
   margin-bottom: 5px;
 }
-
+.error {
+  border: 1px solid #EB5757 !important;
+}
+.error-text{
+  position: absolute;
+  bottom: 67px;
+  left: 165px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #EB5757;
+}
+.accepted{
+  position: absolute;
+  bottom: 67px;
+  left: 176px;
+  font-family: 'Karla';
+  font-size: 12px;
+  line-height: 14px;
+  color: #27AE60;
+}
 .submit-modal {
   display: block;
   width: 81px;
