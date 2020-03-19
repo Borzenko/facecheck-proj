@@ -43,8 +43,13 @@ $(document).ready(function () {
   }, 500);
   });
 
-  var el = document.getElementById('desc');
-  el.addEventListener('keyup', countCharacters);
+  $('.description').on('input', function(e) {
+    var textEntered, countRemaining, counter;
+    textEntered = $(this).val();
+    counter = (450 - (textEntered.length));
+    countRemaining = document.getElementById('charactersRemaining');
+    countRemaining.innerText= counter;
+  })
 
   var carousel = $("#owl-demo").owlCarousel({
     navigation: true, // Show next and prev buttons
@@ -91,18 +96,11 @@ $(document).ready(function () {
         scrollTop: $('.download-desktop-app').offset().top
     }, 500);
   });
-  var countCharacters = function() {
-    var textEntered, countRemaining, counter;
-    textEntered = document.getElementById('desc').value;
-    counter = (450 - (textEntered.length));
-    countRemaining = document.getElementById('charactersRemaining');
-    countRemaining.innerText= counter;
-  }
   
   AOS.init({
     duration: 3200
-   });
-
+  });
+  
 });  
 
 
