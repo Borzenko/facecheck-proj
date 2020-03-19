@@ -136,7 +136,6 @@ body {
 
 .logo_image {
   width: 39.18px;
-  height: 37.33px;
   margin-right: 6px; }
   @media screen and (max-width: 765px) {
     .logo_image {
@@ -1710,7 +1709,8 @@ body {
   margin-bottom: 5px; }
 
 .error {
-  border: 1px solid #EB5757 !important; }
+  border: 1px solid #EB5757 !important;
+  transition: 0.5s linear; }
 
 .error-text {
   position: absolute;

@@ -100,14 +100,10 @@ $(document).ready(function () {
   AOS.init({
     duration: 3200
   });
-  
-/*   var form = document.querySelector('.modal-form')
-  var validateBtn = form.querySelector('.submit-modal')
-  var name = form.querySelector('#name')
-  var email = form.querySelector('#email')
-  var subject = form.querySelector('#subject')
-  var message = form.querySelector('.description')
-  var fields = form.querySelectorAll('.field') */
+
+  $('.field').on('keyup', function(){
+    $(this).removeClass('error');
+  })
 
   $('.modal-form').submit(function(e) {
     e.preventDefault();
@@ -133,14 +129,12 @@ $(document).ready(function () {
     } else if(IsEmail(email)==false){ 
         $('#email').addClass('error');
     }
+    $('span.accepted').remove();
+    $('span.error-text').remove();
     console.log(fields)
       if ($(fields).hasClass('error')) {
-        $('span.accepted').remove();
-        $('span.error-text').remove();
         $('.submit-modal').before('<span class="error-text">Make sure all fields are correct</span>');
       }else{
-        $('span.error-text').remove();
-        $('span.accepted').remove();
         $('.submit-modal').before('<span class="accepted">Message sent - thank you!</span>');
       }
   });
