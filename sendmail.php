@@ -1,31 +1,15 @@
-<html>
-<head>
-<title>Форма заявки с сайта</title>
-</head>
-<body>
-
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
 
-$name = htmlspecialchars($name);
-$email = htmlspecialchars($email);
+    $recipient="borzenkomihail@yahoo.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
 
-$name = urldecode($name);
-$email = urldecode($email);
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-$name = trim($name);
-$email = trim($email);
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-echo $name;
-echo "<br>";
-echo $email;
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
 
-if (mail("example", "Заявка с сайта", "ФИО:".$name.". E-mail: ".$email ,"From: example\r\n"))
- {     echo "сообщение успешно отправлено";
-} else {
-    echo "при отправке сообщения возникли ошибки";
-}?>
-
-
+?>
