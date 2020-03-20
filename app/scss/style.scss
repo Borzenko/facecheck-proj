@@ -2097,21 +2097,21 @@ body {
     width: auto;
   }
 
-  &:after {
-    content: "";
-    background-image: url('../images/jewel.svg');
-    width: 58px;
-    height: 15px;
-    z-index: 100;
-    position: absolute;
-    bottom: -14px;
-    left: calc(50% - 29px);
-    background-repeat: no-repeat;
+  // &:after {
+  //   content: "";
+  //   background-image: url('../images/jewel.svg');
+  //   width: 58px;
+  //   height: 15px;
+  //   z-index: 100;
+  //   position: absolute;
+  //   bottom: -14px;
+  //   left: calc(50% - 29px);
+  //   background-repeat: no-repeat;
 
-    @media screen and (max-width: 500px) {
-      right: 41%;
-    }
-  }
+  //   @media screen and (max-width: 500px) {
+  //     right: 41%;
+  //   }
+  // }
 }
 .modal-title{
   border-bottom:1px solid #2A3036;

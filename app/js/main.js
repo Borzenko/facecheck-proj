@@ -131,6 +131,9 @@ $(document).ready(function () {
         $('.submit-modal').before('<span class="error-text">Make sure all fields are correct</span>');
     } else {
         $('.submit-modal').before('<span class="accepted">Message sent - thank you!</span>');
+        setTimeout(function() {
+          $('.close_modal').trigger('click')
+        }, 1500)
     }
   });
 });  
