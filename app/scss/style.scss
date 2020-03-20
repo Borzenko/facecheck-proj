@@ -1472,22 +1472,43 @@ body {
   }
 
 }
+
+.slider-card-wrapper {
+  padding: 0 8px;
+  display: block;
+  width: 100%;
+}
+
 .slider-card {
   position: relative;
   display: flex;
+  width: 100%;
   align-items: center;
   background: #202529;
-  width: calc(100% - 17px);
   height: 252px;
   border-radius: 0 25px 0 35px;
   border: 1px solid #C59A43;
   margin-top: 63px;
+
+  @media screen and (max-width: 765px) {
+    height: 78px;
+  }
 
   .right-top-corner {
     position: absolute;
     right: -6px;
     top: -2px;
     background: url('../images/vertical-corner.svg');
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .left-bottom-corner {
+    position: absolute;
+    left: 1px;
+    bottom: -4px;
+    background: url('../images/left-bottom.svg');
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
@@ -1509,6 +1530,7 @@ body {
     position: absolute;
     right: -7px;
     top: 13px;
+    z-index: 1;
     border-top: 1px solid #C59A43;
     border-bottom: 1px solid #C59A43;
     background: #202529;
@@ -1516,17 +1538,31 @@ body {
 
   &:before {
     content: "";
-    background-image: url(../images/Testamonials-bot.svg);
+    width: 9px;
+    height: calc(100% - 12px);
+    border-left: 1px solid #C59A43;
     position: absolute;
-    bottom: -6px;
-    left: -4px;
-    width: 59px;
-    height: 59px;
-    background-repeat: no-repeat;
-    /*     @media screen and (max-width: 765px) {
-      background-image: url(../images/frame-bot.svg);
-    } */
+    left: -2px;
+    z-index: 1;
+    top: -1px;
+    border-top: 1px solid #C59A43;
+    border-bottom: 1px solid #C59A43;
+    background: #202529;
   }
+
+  // &:before {
+  //   content: "";
+  //   background-image: url(../images/Testamonials-bot.svg);
+  //   position: absolute;
+  //   bottom: -6px;
+  //   left: -4px;
+  //   width: 59px;
+  //   height: 59px;
+  //   background-repeat: no-repeat;
+  //   /*     @media screen and (max-width: 765px) {
+  //     background-image: url(../images/frame-bot.svg);
+  //   } */
+  // }
 }
 
 .owl-item {
@@ -1537,6 +1573,10 @@ body {
   position: relative;
   margin: 0px 100px 0 60px;
   height: 100%;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0px 40px 0 60px;
+  }
 
   @media screen and (max-width: 765px) {
     display: none;
@@ -1709,18 +1749,23 @@ body {
   z-index: 1;
   padding-right: 11%;
 
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+  }
+
   @media screen and (max-width: 765px) {
-    padding-left: 190px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
-  @media screen and (max-width: 665px) {
-    padding-top: 0px;
-    padding-left: 130px;
-  }
+  // @media screen and (max-width: 665px) {
+  //   padding-top: 0px;
+  //   padding-left: 130px;
+  // }
 
-  @media screen and (max-width: 505px) {
-    padding-left: 70px;
-  }
+  // @media screen and (max-width: 505px) {
+  //   padding-left: 70px;
+  // }
 
   @media screen and (max-width: 405px) {
     padding: 0 0 0 56px;
@@ -1739,7 +1784,7 @@ body {
     color: #C59A43;
 
     @media screen and (max-width: 1150px) {
-      padding: 0 21px 0 50px;
+      padding: 0 20px;
     }
 
     @media screen and (max-width: 1025px) {
@@ -1748,7 +1793,6 @@ body {
 
     @media screen and (max-width: 925px) {
       font-size: 28px;
-      padding-left: 0px;
     }
 
     @media screen and (max-width: 765px) {
@@ -1776,17 +1820,17 @@ body {
       @media screen and (max-width: 765px) {
         font-size: 36px;
         line-height: 129.39%;
-        right: 132px;
+        right: 0px;
         bottom: -9px;
       }
 
-      @media screen and (max-width: 605px) {
-        right: 80px;
-      }
+      // @media screen and (max-width: 605px) {
+      //   right: 80px;
+      // }
 
-      @media screen and (max-width: 465px) {
-        right: 14px;
-      }
+      // @media screen and (max-width: 465px) {
+      //   right: 14px;
+      // }
     }
 
     &:after {
@@ -1809,13 +1853,13 @@ body {
         font-size: 36px;
         line-height: 129.39%;
         top: -14px;
-        left: -49px;
+        left: 0px;
 
       }
 
-      @media screen and (max-width: 665px) {
-        left: -30px;
-      }
+      // @media screen and (max-width: 665px) {
+      //   left: -30px;
+      // }
 
     }
   }
