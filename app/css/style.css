@@ -344,7 +344,8 @@ body {
 .intro-inner {
   display: flex;
   justify-content: center;
-  padding-top: 34px; }
+  padding-top: 34px;
+  flex-direction: column; }
 
 .intro {
   display: flex;
@@ -353,6 +354,26 @@ body {
   flex-direction: column; }
   .intro img {
     margin-bottom: 16px; }
+  .intro iframe {
+    width: 82%;
+    height: 457px;
+    margin-bottom: 16px; }
+    @media screen and (max-width: 1050px) {
+      .intro iframe {
+        height: 383px; } }
+    @media screen and (max-width: 850px) {
+      .intro iframe {
+        height: 400px; } }
+    @media screen and (max-width: 765px) {
+      .intro iframe {
+        width: 100%;
+        height: 350px; } }
+    @media screen and (max-width: 575px) {
+      .intro iframe {
+        height: 250px; } }
+    @media screen and (max-width: 375px) {
+      .intro iframe {
+        height: 195px; } }
   @media screen and (max-width: 455px) {
     .intro .info-title-m1 {
       display: block;
