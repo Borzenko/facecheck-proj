@@ -1710,7 +1710,7 @@ body {
 
 .error {
   border: 1px solid #EB5757 !important;
-  transition: 0.5s linear; }
+  transition: 0.3s; }
 
 .error-text {
   position: absolute;

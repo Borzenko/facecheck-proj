@@ -115,39 +115,39 @@ $(document).ready(function () {
     $("input").removeClass('error');
     $("textarea").removeClass('error')
  
-    if (name.length< 1) {
-      $('#name').addClass('error');
-    }
-    if (subject.length< 1) {
-      $('#subject').addClass('error');
-    }
-    if (message.length< 1) {
-      $('.description').addClass('error');
-    }
-    if (email.length< 1) {
+    required(name, '#name')
+    required(subject, '#subject')
+    required(message, '.description')
+    required(email, '#email')
+
+    if(isValidEmail(email) == false) { 
       $('#email').addClass('error');
-    } else if(IsEmail(email)==false){ 
-        $('#email').addClass('error');
     }
+
     $('span.accepted').remove();
     $('span.error-text').remove();
-    console.log(fields)
-      if ($(fields).hasClass('error')) {
+    
+    if ($(fields).hasClass('error')) {
         $('.submit-modal').before('<span class="error-text">Make sure all fields are correct</span>');
-      }else{
+    } else {
         $('.submit-modal').before('<span class="accepted">Message sent - thank you!</span>');
-      }
-  });
-  function IsEmail(email) {
-    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    if(!regex.test(email)) {
-      return false;
-    }else{
-      return true;
     }
-  }
+  });
 });  
 
+var required = function(value, selector) {
+  if (!value.length) {
+    $(selector).addClass('error')
+  }
+}
 
+var isValidEmail = function(email) {
+  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if(!regex.test(email)) {
+    return false;
+  }else{
+    return true;
+  }
+}
 
 
