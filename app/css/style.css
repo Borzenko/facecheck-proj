@@ -1163,6 +1163,9 @@ body {
     width: 20px;
     height: 20px;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 765px) {
+      .slider-card .right-top-corner {
+        display: none; } }
   .slider-card .left-bottom-corner {
     position: absolute;
     left: 1px;
@@ -1171,6 +1174,9 @@ body {
     width: 20px;
     height: 20px;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 765px) {
+      .slider-card .left-bottom-corner {
+        display: none; } }
   .slider-card:after {
     content: "";
     width: 9px;

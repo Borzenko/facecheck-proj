@@ -1502,6 +1502,9 @@ body {
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
+    @media screen and (max-width: 765px) {
+      display: none;
+    }
   }
 
   .left-bottom-corner {
@@ -1512,6 +1515,9 @@ body {
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
+    @media screen and (max-width: 765px) {
+      display: none;
+    }
   }
 
 
