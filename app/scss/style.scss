@@ -1020,15 +1020,6 @@ body {
       background-position: right;
       z-index: 1;
 
-      /*       @media screen and (max-width: 1210px) {
-      right: -76%;
-      }
-      @media screen and (max-width: 1150px) {
-        right: -77%;
-        }
-        @media screen and (max-width: 1110px) {
-          right: -78%;
-          } */
       @media screen and (max-width: 1059px) {
         bottom: 157px;
         top: unset;
@@ -1052,34 +1043,34 @@ body {
       }
     }
 
-    &:before {
-      content: "";
-      background-image: url('../images/Rectangle.svg');
-      width: 15px;
-      height: 20px;
-      background-repeat: no-repeat;
-      position: absolute;
-      bottom: 131px;
-      right: -56%;
-      left: unset;
-      z-index: 1;
+    // &:before {
+    //   content: "";
+    //   background-image: url('../images/Rectangle.svg');
+    //   width: 15px;
+    //   height: 20px;
+    //   background-repeat: no-repeat;
+    //   position: absolute;
+    //   bottom: 131px;
+    //   right: -56%;
+    //   left: unset;
+    //   z-index: 1;
 
-      @media screen and (max-width: 1059px) {
-        top: unset;
-        right: -51%;
-        bottom: 149px;
-      }
+    //   @media screen and (max-width: 1059px) {
+    //     top: unset;
+    //     right: -51%;
+    //     bottom: 149px;
+    //   }
 
-      @media screen and (max-width: 972px) {
-        right: -49%;
-        bottom: 172px;
-      }
+    //   @media screen and (max-width: 972px) {
+    //     right: -49%;
+    //     bottom: 172px;
+    //   }
 
-      @media screen and (max-width: 812px) {
-        right: -47%;
-        bottom: 195px;
-      }
-    }
+    //   @media screen and (max-width: 812px) {
+    //     right: -47%;
+    //     bottom: 195px;
+    //   }
+    // }
 
     p {
       padding-right: 0;
@@ -2264,7 +2255,7 @@ body {
 
 [data-aos="line-1-anim"] {
   &:after {
-    transition: all 2s;
+    transition: width 2s;
     width: 0
   }
 
