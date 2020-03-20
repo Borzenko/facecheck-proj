@@ -1643,6 +1643,13 @@ body {
   .modal-form textarea {
     resize: none; }
 
+textarea {
+  resize: none;
+  overflow: hidden; }
+  @media screen and (max-width: 700px) {
+    textarea {
+      overflow: auto; } }
+
 #charactersRemaining {
   font-family: 'Karla';
   font-style: normal;

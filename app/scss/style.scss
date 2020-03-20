@@ -2219,6 +2219,14 @@ body {
   }
 }
 
+textarea {
+  resize:none;
+  overflow: hidden;
+  @media screen and (max-width: 700px) {
+    overflow: auto;
+  }
+}
+
 #charactersRemaining {
   font-family: 'Karla';
   font-style: normal;
