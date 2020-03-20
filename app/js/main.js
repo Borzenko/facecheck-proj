@@ -56,7 +56,7 @@ $(document).ready(function () {
     slideSpeed: 300,
     paginationSpeed: 400,
     items: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 1000,
     autoplayTimeout: 5000,
     loop: true,
