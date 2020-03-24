@@ -1381,7 +1381,7 @@ body {
       padding-right: 40px; } }
   @media screen and (max-width: 405px) {
     .slider-quote {
-      padding: 0 0 0 56px; } }
+      padding: 0 0 0 16px; } }
   .slider-quote p {
     padding: 0 21px 0 100px;
     position: relative;
@@ -1427,6 +1427,9 @@ body {
           line-height: 129.39%;
           right: 0px;
           bottom: -9px; } }
+      @media screen and (max-width: 565px) {
+        .slider-quote p:before {
+          right: 21px; } }
     .slider-quote p:after {
       content: "“";
       position: absolute;
@@ -1447,6 +1450,9 @@ body {
           line-height: 129.39%;
           top: -14px;
           left: 0px; } }
+      @media screen and (max-width: 565px) {
+        .slider-quote p:after {
+          top: -8px; } }
   .slider-quote span {
     margin-top: 18px;
     display: block;

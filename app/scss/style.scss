@@ -1799,7 +1799,7 @@ body {
   // }
 
   @media screen and (max-width: 405px) {
-    padding: 0 0 0 56px;
+    padding: 0 0 0 16px;
   }
 
   p {
@@ -1854,6 +1854,9 @@ body {
         right: 0px;
         bottom: -9px;
       }
+      @media screen and (max-width: 565px) {
+        right: 21px;
+      }
 
       // @media screen and (max-width: 605px) {
       //   right: 80px;
@@ -1886,6 +1889,9 @@ body {
         top: -14px;
         left: 0px;
 
+      }
+      @media screen and (max-width: 565px) {
+          top: -8px;
       }
 
       // @media screen and (max-width: 665px) {
