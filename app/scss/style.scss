@@ -2434,6 +2434,17 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid #DEAD4B;
 }
 
+textarea::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 50%;
+}
+ 
+ 
+textarea::-webkit-scrollbar-thumb {
+  background-color: #DEAD4B;
+  outline: 1px solid #DEAD4B;
+}
+
 // ._mCS_1 .mCSB_dragger .mCSB_dragger_bar{ background-color: red; }
 
 // ._mCS_2 .mCSB_dragger .mCSB_dragger_bar{ background-color: green; }

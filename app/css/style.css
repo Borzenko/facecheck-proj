@@ -1818,3 +1818,11 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #DEAD4B;
   outline: 1px solid #DEAD4B; }
+
+textarea::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 50%; }
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #DEAD4B;
+  outline: 1px solid #DEAD4B; }
