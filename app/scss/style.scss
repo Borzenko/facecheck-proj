@@ -1975,6 +1975,7 @@ body {
       &.active {
         position: absolute;
         left: calc(50% - 82px);
+        top: 102px;
 
         .avatar-big-wrapper {
           display: block;
@@ -1986,7 +1987,7 @@ body {
       }
 
       &:first-child {
-        margin-left: -8px;
+        margin-left: 0;
       }
 
       &:hover {
@@ -2422,7 +2423,7 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color:#CCBA97;
   transition: background-color 5000s ease-in-out 0s;
-  background: #0D0D0F;
+  background: #0D0D0F ;
   border: 1px solid #043E4C;
   box-sizing: border-box;
   font-family: 'Karla';
