@@ -652,11 +652,6 @@ body {
       margin: 0;
       margin-top: 42px;
     }
-
-    @media screen and (max-width: 455px) {
-      font-size: 22px;
-      line-height: 132.33%;
-    }
   }
 }
 
@@ -1481,7 +1476,6 @@ body {
   .info-title-m2 {
     @media screen and (max-width: 765px) {
       margin-top: 24px;
-      padding-left: 20px;
       z-index: 2;
 
     }
@@ -1941,7 +1935,7 @@ body {
     justify-content: space-between;
     width: 100%;
     align-items: flex-end;
-    padding: 120px 140px 0;
+    padding: 120px 20px 0;
 
     @media screen and (max-width: 565px) {
       padding: 120px 29px 0 32px;
@@ -1975,7 +1969,11 @@ body {
       &.active {
         position: absolute;
         left: calc(50% - 82px);
-        top: 102px;
+        top: 120px;
+
+        @media screen and (max-width: 455px) {
+          top: 102px;
+        }
 
         .avatar-big-wrapper {
           display: block;
