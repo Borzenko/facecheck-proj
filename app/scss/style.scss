@@ -698,6 +698,7 @@ body {
 
 .info-body {
   display: flex;
+  width: 100%;
   align-items: flex-start;
   margin-top: 50px;
   justify-content: space-between;
@@ -714,9 +715,18 @@ body {
   position: relative;
   z-index: 1;
   padding-top: 5px;
+  height: 340px;
+
+  iframe {
+    height: 100%;
+  }
 
   @media screen and (max-width: 765px) {
     width: 100%;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 200px;
   }
 }
 

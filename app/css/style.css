@@ -555,6 +555,7 @@ body {
 
 .info-body {
   display: flex;
+  width: 100%;
   align-items: flex-start;
   margin-top: 50px;
   justify-content: space-between;
@@ -568,10 +569,16 @@ body {
   width: 49.2%;
   position: relative;
   z-index: 1;
-  padding-top: 5px; }
+  padding-top: 5px;
+  height: 340px; }
+  .info-screen iframe {
+    height: 100%; }
   @media screen and (max-width: 765px) {
     .info-screen {
       width: 100%; } }
+  @media screen and (max-width: 500px) {
+    .info-screen {
+      height: 200px; } }
 
 .info-screen-mobile {
   margin-top: 56px; }
