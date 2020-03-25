@@ -1381,7 +1381,7 @@ body {
       padding-right: 40px; } }
   @media screen and (max-width: 405px) {
     .slider-quote {
-      padding: 0 0 0 56px; } }
+      padding: 0 0 0 16px; } }
   .slider-quote p {
     padding: 0 21px 0 100px;
     position: relative;
@@ -1427,6 +1427,9 @@ body {
           line-height: 129.39%;
           right: 0px;
           bottom: -9px; } }
+      @media screen and (max-width: 565px) {
+        .slider-quote p:before {
+          right: 21px; } }
     .slider-quote p:after {
       content: "“";
       position: absolute;
@@ -1447,6 +1450,9 @@ body {
           line-height: 129.39%;
           top: -14px;
           left: 0px; } }
+      @media screen and (max-width: 565px) {
+        .slider-quote p:after {
+          top: -8px; } }
   .slider-quote span {
     margin-top: 18px;
     display: block;
@@ -1786,6 +1792,24 @@ textarea {
   @media screen and (max-width: 765px) {
     [data-aos="line-3-anim"].aos-animate:after {
       width: 50px; } }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #CCBA97;
+  transition: background-color 5000s ease-in-out 0s;
+  background: #0D0D0F;
+  border: 1px solid #043E4C;
+  box-sizing: border-box;
+  font-family: 'Karla';
+  font-size: 16px;
+  line-height: 19px; }
 
 body::-webkit-scrollbar {
   width: 2px;

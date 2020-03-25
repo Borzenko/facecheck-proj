@@ -69,12 +69,14 @@
       <a href="#close-modal" rel="modal:close" class="close_modal"></a>
     </div>
     <div class="form-inner">
-      <form class="modal-form" action="sendmail.php" method="POST">
+      <form autocomplete="off" class="modal-form" action="sendmail.php" method="POST">
+
+
         <label for="name">Name</label>
         <input id="name" name="sender" class="field" type="text" placeholder="Your name" autocomplete = "off" >
         
         <label for="email">Email Adress</label>
-        <input id="email" name="senderEmail" class="field" type="text" placeholder="you@mail.com" autocomplete = "off" >
+        <input id="email" name="senderEmail" class="field" type="text" placeholder="you@mail.com" autocomplete = "new-email" >
         
         <label for="subject">Subject</label>
         <input id="subject" name="subject" class="field" type="text" placeholder="What can we help you with?" autocomplete="off" >
