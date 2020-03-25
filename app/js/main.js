@@ -105,6 +105,15 @@ $(document).ready(function () {
     $(this).removeClass('error');
   })
 
+  $('.modal-open').on('click', function() {
+    $('#modal-contact').modal({
+      escapeClose: false,
+      clickClose: false,
+      showClose: false
+    })
+  })
+
+
   $('.modal-form').submit(function(e) {
     e.preventDefault();
     var name = $('#name').val();
