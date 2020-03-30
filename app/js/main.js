@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("#nav-mobile").toggleClass("active");
   });
 
-  $("#modal-open").on("click", function (event) {
+  $(".modal-open").on("click", function (event) {
     event.preventDefault();
     $("#nav-mobile").toggleClass("active");
   });
