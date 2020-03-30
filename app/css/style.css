@@ -254,7 +254,7 @@ body {
 .nav-toggle {
   display: none;
   position: absolute;
-  top: 6px;
+  top: 5px;
   left: 18px;
   font-size: 0;
   color: transparent;
