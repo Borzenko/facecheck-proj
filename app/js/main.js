@@ -106,11 +106,18 @@ $(document).ready(function () {
   })
 
   $('.modal-open').on('click', function () {
-    $('#modal-contact').modal({
-      escapeClose: false,
-      clickClose: false,
-      showClose: false
-    })
+    if ($('.modal-container.active').length) {
+      $('.modal-container').hide().removeClass('active')
+      $('body').css('overflow', '')
+    } else {
+      $('.modal-container').show().addClass('active');
+      $('body').css('overflow', 'hidden')
+    }
+  })
+
+  $('.close_modal').on('click', function() {
+    $('.modal-container').hide().removeClass('active')
+    $('body').css('overflow', '')
   })
 
 

@@ -63,36 +63,38 @@
             </div>
         </div>
     </header>
-    <div id="modal-contact" class="modal" style="padding:15px 0 !important">
-        <div class="modal-title">
-            <h3 class="info-title-m2 ta-c">Contact Us</h3>
-            <a href="#close-modal" rel="modal:close" class="close_modal"></a>
-        </div>
-        <div class="form-inner">
-            <form autocomplete="off" class="modal-form" action="sendmail.php" method="POST">
-
-
-                <label for="name">Name</label>
-                <input id="name" name="sender" class="field" type="text" placeholder="Your name" autocomplete="off">
-
-                <label for="email">Email Adress</label>
-                <input id="email" name="senderEmail" class="field" type="text" placeholder="you@mail.com" autocomplete="new-email">
-
-                <label for="subject">Subject</label>
-                <input id="subject" name="subject" class="field" type="text" placeholder="What can we help you with?" autocomplete="off">
-
-                <label for="desc">Description</label>
-                <textarea name="message" maxlength="450" class="description field" cols="30" rows="7" autocomplete="off" placeholder="Let us know your thoughts about the app, ask for assistance or make suggestions here. 
+    <div class="modal-container blocker">
+        <div id="modal-contact" class="modal" style="padding:15px 0 !important">
+            <div class="modal-title">
+                <h3 class="info-title-m2 ta-c">Contact Us</h3>
+                <a href="#close-modal" rel="modal:close" class="close_modal"></a>
+            </div>
+            <div class="form-inner">
+                <form autocomplete="off" class="modal-form" action="sendmail.php" method="POST">
+    
+    
+                    <label for="name">Name</label>
+                    <input id="name" name="sender" class="field" type="text" placeholder="Your name" autocomplete="off">
+    
+                    <label for="email">Email Adress</label>
+                    <input id="email" name="senderEmail" class="field" type="text" placeholder="you@mail.com" autocomplete="new-email">
+    
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" class="field" type="text" placeholder="What can we help you with?" autocomplete="off">
+    
+                    <label for="desc">Description</label>
+                    <textarea name="message" maxlength="450" class="description field" cols="30" rows="7" autocomplete="off" placeholder="Let us know your thoughts about the app, ask for assistance or make suggestions here.
 Thank you for sharing!"></textarea>
-                <div style="position: relative; width: 100%;">
-                    <div id="charactersRemaining">450</div>
-                    <span class="characters-left">characters left</span>
-                </div>
-
-                <button type="submit" name="submit" class="submit-modal">Submit</button>
-            </form>
+                    <div style="position: relative; width: 100%;">
+                        <div id="charactersRemaining">450</div>
+                        <span class="characters-left">characters left</span>
+                    </div>
+    
+                    <button type="submit" name="submit" class="submit-modal">Submit</button>
+                </form>
+            </div>
+    
         </div>
-
     </div>
     <section class="download-desktop-app">
         <div class="container">
@@ -425,7 +427,6 @@ Thank you for sharing!"></textarea>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app/js/owl.carousel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="app/js/main.js"></script>
