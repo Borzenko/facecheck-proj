@@ -69,6 +69,8 @@ $(document).ready(function () {
   $('.profile-card').click(function () {
     $('.profile-card').removeClass('active')
     $(this).addClass('active')
+    carousel.trigger('stop.owl.autoplay')
+    carousel.trigger('play.owl.autoplay',[5000])
 
     carousel.trigger('to.owl.carousel', [$(this).data().slide, 300]);
   })
